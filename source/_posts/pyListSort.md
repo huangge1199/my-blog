@@ -3,6 +3,7 @@ title: python3学习笔记--两种排序方法
 date: 2021-12-29 10:20:17
 tags: python
 categories: 学习笔记
+cover: https://blog.huangge1199.cn/post/pyListSort/bg.jpeg
 ---
 # 列表排序方法
 

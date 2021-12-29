@@ -3,6 +3,7 @@ title: python3学习笔记--条件控制用法整理
 date: 2021-12-29 16:04:06
 tags: python
 categories: 学习笔记
+cover: https://blog.huangge1199.cn/post/pyControl/bg.jpeg
 ---
 
 # if
