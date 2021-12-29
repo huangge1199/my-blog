@@ -98,10 +98,10 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img:
+index_img: https://blog.huangge1199.cn/images/bg.jpeg
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: orange
+default_top_img: https://blog.huangge1199.cn/images/bg.jpeg
 
 # The banner image of archive page
 archive_img:
@@ -418,7 +418,7 @@ footer:
   owner:
     enable: true
     since: 2021
-  custom_text: 备案信息：<a href="https://beian.miit.gov.cn">辽ICP备2021006134号-1</a>
+  custom_text: 备案信息：<a href="https://beian.miit.gov.cn">辽ICP备2021006134号-2</a>
   copyright: true # Copyright of theme and framework
 
 # Analysis
