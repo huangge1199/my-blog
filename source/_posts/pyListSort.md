@@ -50,4 +50,14 @@ newStudents = sorted(students, key=lambda x: x[1])
 print(students)  # [('john', 'C', 15), ('jane', 'A', 12), ('dave', 'B', 10)]
 print(newStudents)  # [('jane', 'A', 12), ('dave', 'B', 10), ('john', 'C', 15)]
 ```
-
+<script src="https://readmore.openwrite.cn/js/readmore.js" type="text/javascript"></script>
+<script>
+    const btw = new BTWPlugin();
+    btw.init({
+        id: 'article-container',
+        blogId: '28702-1640918923546-365',
+        name: '龙儿之家',
+        qrcode: 'https://blog.huangge1199.cn/images/WeaselLong.jpg',
+        keyword: 'more',
+    });
+</script>
