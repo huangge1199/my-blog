@@ -2,6 +2,7 @@
 title: JPA复合主键使用
 date: 2022-01-05 15:14:53
 tags: [java,jpa]
+categories: [java,jpa]
 cover: https://blog.huangge1199.cn/post/jpaCompositePK/bg.jpg
 ---
 
