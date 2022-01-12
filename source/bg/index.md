@@ -1,5 +1,5 @@
 ---
-title: wallpaper
+title: 背景图
 date: 2021-12-29 17:25:02
 ---
 {% gallery %}
@@ -7,4 +7,5 @@ date: 2021-12-29 17:25:02
 ![](https://blog.huangge1199.cn/post/pyControl/bg.jpeg)
 ![](https://blog.huangge1199.cn/post/pyListSort/bg.jpeg)
 ![](https://blog.huangge1199.cn/post/jpaCompositePK/bg.jpg)
+![](https://blog.huangge1199.cn/post/nexusCreate/bg.jpeg)
 {% endgallery %}

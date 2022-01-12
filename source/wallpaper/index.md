@@ -1,5 +1,5 @@
 ---
-title: wallpaper
+title: 壁纸
 date: 2021-12-09 12:22:02
 ---
 {% gallery %}
