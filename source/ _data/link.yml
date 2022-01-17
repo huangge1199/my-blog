@@ -8,6 +8,10 @@
       link: https://valine.js.org/
       avatar: https://valine.js.org/images/valine.png
       descr: 一款快速、简洁且高效的无后端评论系统
+    - name: 百度统计
+      link: https://tongji.baidu.com/
+      avatar: https://tongji.baidu.com/web/image/homepage_logo.svg?__v=1641900059690
+      descr: 一款快速、简洁且高效的无后端评论系统
 
 - class_name: 官方网站
   link_list:
