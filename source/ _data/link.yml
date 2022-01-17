@@ -1,10 +1,20 @@
-- class_name: 友情鏈接
-  class_desc: 那些人，那些事
+- class_name: 博客相关
   link_list:
     - name: Hexo
       link: https://hexo.io/zh-tw/
       avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
-      descr: 快速、簡單且強大的網誌框架
+      descr: 快速、简单且强大的网站框架
+    - name: Valine
+      link: https://valine.js.org/
+      avatar: https://valine.js.org/images/valine.png
+      descr: 一款快速、简洁且高效的无后端评论系统
+
+- class_name: 官方网站
+  link_list:
+    - name: sa-token
+      link: https://sa-token.dev33.cn/
+      avatar: https://sa-token.dev33.cn/doc/logo.png
+      descr: 一个轻量级 java 权限认证框架，让鉴权变得简单、优雅！
 
 - class_name: 網站
   class_desc: 值得推薦的網站
