@@ -13,12 +13,55 @@
       avatar: https://tongji.baidu.com/web/image/homepage_logo.svg?__v=1641900059690
       descr: 领先的中文网站分析平台
 
+- class_name: 开发工具
+  class_desc: 常用的软件安装包下载地址
+  link_list:
+    - name: jdk
+      link: https://www.oracle.com/java/technologies/downloads/
+      avatar: https://blog.huangge1199.cn/link/jdk.png
+      descr: Java语言的软件开发工具包
+    - name: IDEA
+      link: https://www.jetbrains.com/zh-cn/idea/
+      avatar: https://blog.huangge1199.cn/link/idea.png
+      descr: 功能强大、符合人体工程学的 Java IDE
+    - name: webstorm
+      link: https://www.jetbrains.com/zh-cn/webstorm/
+      avatar: https://blog.huangge1199.cn/link/webstorm.png
+      descr: 一个适用于JavaScript 和相关技术的集成开发环境
+    - name: datagrip
+      link: https://www.jetbrains.com/zh-cn/datagrip/
+      avatar: https://blog.huangge1199.cn/link/datagrip.png
+      descr: 由JetBrains 开发的数据库和SQL 跨平台IDE
+    - name: pyCharm
+      link: https://www.jetbrains.com/zh-cn/pycharm/
+      avatar: https://blog.huangge1199.cn/link/pycharm.png
+      descr: JetBrains为专业开发者提供的Python IDE
+    - name: xshell
+      link: https://www.xshell.com/zh/xshell/
+      avatar: https://blog.huangge1199.cn/link/xshell.png
+      descr: 业界最强大的SSH客户机
+    - name: winscp
+      link: https://winscp.net/eng/index.php
+      avatar: https://winscp-static-746341.c.cdn77.org/assets/images/logos/logo.png?v=6990
+      descr: 一个Windows 环境下使用的 SSH 的开源图形化 SFTP 客户端
+    - name: Another Redis Desktop Manager
+      link: https://github.com/qishibo/AnotherRedisDesktopManager
+      avatar: https://blog.huangge1199.cn/link/AnotherRedisDesktopManager.png
+      descr: 更快、更好、更稳定的Redis桌面(GUI)管理客户端，兼容Windows、Mac、Linux，性能出众，轻松加载海量键值
+
 - class_name: 官方网站
   link_list:
     - name: sa-token
       link: https://sa-token.dev33.cn/
       avatar: https://sa-token.dev33.cn/doc/logo.png
       descr: 一个轻量级 java 权限认证框架，让鉴权变得简单、优雅！
+
+- class_name: 辅助工具
+  link_list:
+    - name: 恒星播放器
+      link: https://www.stellarplayer.com/
+      avatar: https://static.coldlake1.com/staticsource/website-master/assets/logo.5c0ef6da.png
+      descr: 一款纯粹专注的播放器
 
 - class_name: 網站
   class_desc: 值得推薦的網站
