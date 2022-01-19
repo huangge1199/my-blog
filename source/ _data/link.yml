@@ -13,8 +13,18 @@
       avatar: https://tongji.baidu.com/web/image/homepage_logo.svg?__v=1641900059690
       descr: 领先的中文网站分析平台
 
+- class_name: 视频学习
+  link_list:
+    - name: 咕泡云课堂
+      link: https://ke.gupaoedu.cn/
+      avatar: https://ke.gupaoedu.cn/favicon.ico
+      descr: 咕泡云课堂是咕泡教育旗下的在线教育直播平台，集教学管理、在线授课听课、作业考试、互动学习功能于一体，支持web、app、h5等多端同时在线互动直播
+    - name: 谷粒学苑
+      link: https://www.gulixueyuan.com/
+      avatar: https://www.gulixueyuan.com/files/system/2017/06-21/160846e883d7292766.ico?version=20.4.6
+      descr: 谷粒学苑为尚硅谷旗下IT课程在线学习平台
+
 - class_name: 开发工具
-  class_desc: 常用的软件安装包下载地址
   link_list:
     - name: jdk
       link: https://www.oracle.com/java/technologies/downloads/
@@ -48,13 +58,76 @@
       link: https://github.com/qishibo/AnotherRedisDesktopManager
       avatar: https://blog.huangge1199.cn/link/AnotherRedisDesktopManager.png
       descr: 更快、更好、更稳定的Redis桌面(GUI)管理客户端，兼容Windows、Mac、Linux，性能出众，轻松加载海量键值
+    - name: JD-GUI
+      link: http://java-decompiler.github.io/
+      avatar: https://blog.huangge1199.cn/link/jdgui.png
+      descr: 一款功能十分强大的JAVA反编译工具
 
-- class_name: 官方网站
+- class_name: 后端开发
   link_list:
     - name: sa-token
       link: https://sa-token.dev33.cn/
       avatar: https://sa-token.dev33.cn/doc/logo.png
       descr: 一个轻量级 java 权限认证框架，让鉴权变得简单、优雅！
+    - name: sentinel
+      link: https://sentinelguard.io/
+      avatar: https://sentinelguard.io/img/sentinel.ico
+      descr: 面向分布式服务架构的高可用流量控制组件
+    - name: dubbo
+      link: https://dubbo.apache.org/
+      avatar: https://dubbo.apache.org/favicons/favicon.ico
+      descr: 一款高性能、轻量级的开源服务框架
+    - name: nacos
+      link: https://nacos.io/
+      avatar: https://img.alicdn.com/tfs/TB1hgJpHAPoK1RjSZKbXXX1IXXa-64-64.png
+      descr: 一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台
+    - name: nginx
+      link: https://nginx.org/
+      avatar: https://blog.huangge1199.cn/link/nginx.png
+      descr: 反向代理服务器
+    - name: zookeeper
+      link: https://zookeeper.apache.org/
+      avatar: https://zookeeper.apache.org/images/zookeeper_small.gif
+      descr: 为大型分布式计算提供开源的分布式配置服务、同步服务和命名注册
+    - name: kafka
+      link: https://kafka.apache.org/
+      avatar: https://blog.huangge1199.cn/link/kafka.png
+      descr: 一种分布式的，基于发布 / 订阅的消息系统
+    - name: rabbitmq
+      link: https://www.rabbitmq.com/
+      avatar: https://blog.huangge1199.cn/link/rabbitmq.png
+      descr: 消息队列
+    - name: rocketmq
+      link: https://rocketmq.apache.org/
+      avatar: https://rocketmq.apache.org/assets/images/rmq-logo.png
+      descr: 消息队列
+
+- class_name: 前端开发
+  link_list:
+    - name: vue
+      link: https://cn.vuejs.org/
+      avatar: https://cn.vuejs.org/images/logo.svg
+      descr: 是一套用于构建用户界面的渐进式框架
+    - name: element
+      link: https://element.eleme.cn/#/zh-CN
+      avatar: https://element.eleme.cn/favicon.ico
+      descr: 一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库
+    - name: vant
+      link: https://youzan.github.io/vant-weapp/#/home
+      avatar: https://img.yzcdn.cn/vant/logo.png
+      descr: 轻量、可靠的小程序 UI 组件库
+    - name: nuxt.js
+      link: https://nuxtjs.org/
+      avatar: https://nuxtjs.org/_nuxt/icons/icon_512x512.a3b4ce.png
+      descr: 轻量、可靠的小程序 UI 组件库
+    - name: echarts
+      link: https://echarts.apache.org/
+      avatar: https://cdn.jsdelivr.net/gh/apache/echarts-website@asf-site/zh/images/favicon.png?_v_=20200710_1
+      descr: 轻量、可靠的小程序 UI 组件库
+    - name: jQuery UI
+      link: https://jui.org/
+      avatar: https://blog.huangge1199.cn/link/jui.png
+      descr: 简单实用国产jQuery UI框架 - DWZ富客户端框架(J-UI.com)
 
 - class_name: 辅助工具
   link_list:
@@ -62,19 +135,3 @@
       link: https://www.stellarplayer.com/
       avatar: https://static.coldlake1.com/staticsource/website-master/assets/logo.5c0ef6da.png
       descr: 一款纯粹专注的播放器
-
-- class_name: 網站
-  class_desc: 值得推薦的網站
-  link_list:
-    - name: Youtube
-      link: https://www.youtube.com/
-      avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png
-      descr: 視頻網站
-    - name: Weibo
-      link: https://www.weibo.com/
-      avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png
-      descr: 中國最大社交分享平台
-    - name: Twitter
-      link: https://twitter.com/
-      avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
-      descr: 社交分享平台
