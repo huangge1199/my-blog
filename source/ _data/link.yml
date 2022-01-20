@@ -131,6 +131,10 @@
 
 - class_name: 辅助工具
   link_list:
+    - name: YAPI
+      link: http://yapi.smart-xwork.cn/
+      avatar: https://blog.huangge1199.cn/link/yapi.png
+      descr: 高效、易用、功能强大的API管理平台
     - name: 恒星播放器
       link: https://www.stellarplayer.com/
       avatar: https://static.coldlake1.com/staticsource/website-master/assets/logo.5c0ef6da.png
