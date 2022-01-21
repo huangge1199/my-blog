@@ -11,7 +11,7 @@ menu:
   时间轴: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
-  照片: /Gallery/ || fas fa-folder-open
+  照片: /Gallery/ || fas fa-images
 #  清单||fa fa-heartbeat:
 #    音乐: /music/ || fas fa-music
 #    照片: /Gallery/ || fas fa-images
@@ -480,20 +480,20 @@ site_verification:
 # Theme color for customize
 # Notice: color value must in double quotes like "#000" or may cause error!
 
-# theme_color:
-#   enable: true
-#   main: "#49B1F5"
-#   paginator: "#00c4b6"
-#   button_hover: "#FF7242"
-#   text_selection: "#00c4b6"
-#   link_color: "#99a9bf"
-#   meta_color: "#858585"
-#   hr_color: "#A4D8FA"
-#   code_foreground: "#F47466"
-#   code_background: "rgba(27, 31, 35, .05)"
-#   toc_color: "#00c4b6"
-#   blockquote_padding_color: "#49b1f5"
-#   blockquote_background_color: "#49b1f5"
+ theme_color:
+   enable: true
+   main: "#e6b422"
+   paginator: "#00c4b6"
+   button_hover: "#FF7242"
+   text_selection: "#00c4b6"
+   link_color: "#99a9bf"
+   meta_color: "#858585"
+   hr_color: "#A4D8FA"
+   code_foreground: "#F47466"
+   code_background: "rgba(27, 31, 35, .05)"
+   toc_color: "#00c4b6"
+   blockquote_padding_color: "#e6b422"
+   blockquote_background_color: "#e6b422"
 
 # The top_img settings of home page
 # default: top img - full screen, site info - middle (默認top_img全屏，site_info在中間)
@@ -528,7 +528,7 @@ enter_transitions: true
 # canvas_ribbon (靜止彩帶背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: true
+  enable: false
   size: 150
   alpha: 0.6
   zIndex: -1
@@ -537,8 +537,8 @@ canvas_ribbon:
 
 # Fluttering Ribbon (動態彩帶)
 canvas_fluttering_ribbon:
-  enable: false
-  mobile: false
+  enable: true
+  mobile: true
 
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
@@ -655,7 +655,7 @@ aside:
       link: https://github.com/xxxxxx
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 这是我的博客哦！
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
