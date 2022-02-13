@@ -47,6 +47,7 @@ copy:
 social:
   # fab fa-github: https://github.com/xxxxx || Github
    fas fa-envelope: mailto:huangge1199@hotmail.com || Email
+   iconfont icon-gongzhonghao1: https://blog.huangge1199.cn/images/gjh.png || 公众号
 
 # search (搜索)
 # --------------------------------------
@@ -854,6 +855,7 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="//at.alicdn.com/t/font_3181009_o2ibgqlnpk.css">
   bottom:
     # - <script src="xxxx"></script>
 
