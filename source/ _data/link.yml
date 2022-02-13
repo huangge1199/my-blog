@@ -12,6 +12,10 @@
       link: https://tongji.baidu.com/
       avatar: https://tongji.baidu.com/web/image/homepage_logo.svg?__v=1641900059690
       descr: 领先的中文网站分析平台
+    - name: 墨滴编辑器
+      link: https://editor.mdnice.com/
+      avatar: https://mdnice.com/favicon.svg
+      descr: 可将markdown文章转换成匹配知乎、掘金、微信订阅号等多个平台的格式
 
 - class_name: 视频学习
   link_list:
