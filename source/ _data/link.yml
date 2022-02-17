@@ -132,6 +132,10 @@
       link: https://jui.org/
       avatar: https://blog.huangge1199.cn/link/jui.png
       descr: 简单实用国产jQuery UI框架 - DWZ富客户端框架(J-UI.com)
+    - name: mavonEditor
+      link: http://www.mavoneditor.com/
+      avatar:
+      descr: Vue的一款markdown插件
 
 - class_name: 辅助工具
   link_list:
