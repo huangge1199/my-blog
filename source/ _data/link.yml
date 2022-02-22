@@ -116,6 +116,10 @@
       link: https://element.eleme.cn/#/zh-CN
       avatar: https://element.eleme.cn/favicon.ico
       descr: 一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库
+    - name: Element Plus
+      link: https://element-plus.gitee.io/zh-CN/
+      avatar: https://element-plus.gitee.io/images/element-plus-logo-small.svg
+      descr: 一个 Vue 3 UI 框架 | Element Plus
     - name: vant
       link: https://youzan.github.io/vant-weapp/#/home
       avatar: https://img.yzcdn.cn/vant/logo.png
