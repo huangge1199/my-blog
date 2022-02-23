@@ -16,6 +16,10 @@
       link: https://editor.mdnice.com/
       avatar: https://mdnice.com/favicon.svg
       descr: 可将markdown文章转换成匹配知乎、掘金、微信订阅号等多个平台的格式
+    - name: v-md-editor
+      link: https://ckang1229.gitee.io/vue-markdown-editor/zh/
+      avatar:
+      descr: Vue的一款markdown插件（支持vue2和vue3）
 
 - class_name: 视频学习
   link_list:
