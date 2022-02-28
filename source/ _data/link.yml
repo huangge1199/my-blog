@@ -109,6 +109,10 @@
       link: https://rocketmq.apache.org/
       avatar: https://rocketmq.apache.org/assets/images/rmq-logo.png
       descr: 消息队列
+    - name: justauth
+      link: https://justauth.wiki/
+      avatar: https://justauth.wiki/logo.png
+      descr: 开箱即用的整合第三方登录的开源组件
 
 - class_name: 前端开发
   link_list:
