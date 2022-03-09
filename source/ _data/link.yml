@@ -113,6 +113,10 @@
       link: https://justauth.wiki/
       avatar: https://justauth.wiki/logo.png
       descr: 开箱即用的整合第三方登录的开源组件
+    - name: XXL-JOB
+      link: https://www.xuxueli.com/xxl-job/
+      avatar: https://www.xuxueli.com/doc/static/xxl-job/images/xxl-logo.jpg
+      descr: 分布式任务调度平台
 
 - class_name: 前端开发
   link_list:
