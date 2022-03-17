@@ -108,3 +108,37 @@ deploy:
   type: 'git'
   repo: git@81.70.94.30:/repo/hexo.git
   branch: master
+aplayer:
+  meting: true
+  asset_inject: false
+douban:
+  user: 255047863
+  builtin: false
+  book:
+    title: 'This is my book title'
+    quote: 'This is my book quote'
+    meta: true
+    comments: true
+    top_img: https://cccccc.png
+    aside: true
+    path: books
+    limit:
+  movie:
+    title: 'This is my movie title'
+    quote: 'This is my movie quote'
+    meta: true
+    comments: true
+    top_img: https://cccccc.png
+    aside: true
+    path: movies
+    limit:
+  game:
+    title: 'This is my game title'
+    quote: 'This is my game quote'
+    meta: true
+    comments: true
+    top_img: https://cccccc.png
+    aside: true
+    path: games
+    limit:
+  timeout: 10000

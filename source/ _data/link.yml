@@ -117,6 +117,10 @@
       link: https://www.xuxueli.com/xxl-job/
       avatar: https://www.xuxueli.com/doc/static/xxl-job/images/xxl-logo.jpg
       descr: 分布式任务调度平台
+    - name: MQTT
+      link: https://www.emqx.com/zh/mqtt
+      avatar: https://www.emqx.com/favicon.ico
+      descr: MQTT - 轻量级的物联网消息传输协议
 
 - class_name: 前端开发
   link_list:
