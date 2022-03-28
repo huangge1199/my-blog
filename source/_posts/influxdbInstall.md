@@ -70,5 +70,3 @@ iinflux -host ip地址 -port 端口号 -username 用户名 -password 密码
 ```
 
 ![](influxdbInstall/2022-03-12-18-56-23-image.png)
-
-
