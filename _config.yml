@@ -115,8 +115,8 @@ douban:
   user: 255047863
   builtin: false
   book:
-    title: 'This is my book title'
-    quote: 'This is my book quote'
+    title: '书籍'
+    quote: '这是我关注的相关书籍'
     meta: true
     comments: true
     top_img: https://cccccc.png
@@ -124,21 +124,12 @@ douban:
     path: books
     limit:
   movie:
-    title: 'This is my movie title'
-    quote: 'This is my movie quote'
+    title: '电影'
+    quote: '这是我关注的相关电影'
     meta: true
     comments: true
     top_img: https://cccccc.png
     aside: true
     path: movies
-    limit:
-  game:
-    title: 'This is my game title'
-    quote: 'This is my game quote'
-    meta: true
-    comments: true
-    top_img: https://cccccc.png
-    aside: true
-    path: games
     limit:
   timeout: 10000
