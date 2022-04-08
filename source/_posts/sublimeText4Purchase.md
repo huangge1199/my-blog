@@ -1,7 +1,7 @@
 ---
 title: Sublime Text 4 破解
 date: 2022-01-14 15:24:18
-categories: 破解方法
+categories: 开发工具
 tags: 破解
 cover: https://blog.huangge1199.cn/post/sublimeText4Purchase/bg.jpeg
 ---
