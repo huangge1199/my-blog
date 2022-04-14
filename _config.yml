@@ -171,3 +171,12 @@ markdown_it_plus:
       enable: true
       options:
         strict: false
+# hexo-tag-cloud 标签云 | see https://github.com/MikeCoder/hexo-tag-cloud
+# hexo-tag-cloud
+tag_cloud:
+  textFont: Trebuchet MS, Helvetica
+  textColor: '#e6b422'
+  textHeight: 25
+  outlineColor: '#68be8d'
+  maxSpeed: 0.5
+  pauseOnSelected: true # true 意味着当选中对应 tag 时,停止转动
