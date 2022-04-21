@@ -113,7 +113,7 @@ aplayer:
   asset_inject: false
 douban:
   user: 255047863
-  builtin: false
+  builtin: true
   book:
     title: '书籍'
     quote: '这是我关注的相关书籍'
@@ -207,6 +207,7 @@ footer_beautify:
 # artitalk see https://artitalk.js.org/
 # hexo-butterfly-artitalk-pro
 # see https://akilar.top/posts/f1004b1d/
+# 侧边栏碎碎念以及说说
 artitalk:
   enable:
     card: true # 侧边栏开关
@@ -234,7 +235,7 @@ artitalk:
   option:
     serverURL: https://9VsUIPV2.api.lncldglobal.com #将此处的********替换为你的appId前八位
     lang: zh
-    pageSize: 1
+    pageSize: 3
     color1: '#49b1f5'
     color2: '#00c4b6'
     atEmoji: {
