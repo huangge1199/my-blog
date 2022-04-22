@@ -106,7 +106,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: git@81.70.94.30:/repo/hexo.git
+  repo: root@81.70.94.30:/app/hexo/hexo.git
   branch: master
 aplayer:
   meting: true
