@@ -1,9 +1,12 @@
 ---
+
 title: 用docker-compose安装nginx
 date: 2022-04-24 15:36:52
 tags: [docker]
 categories: [docker]
+
 ---
+
 docker中安装nginx
 
 # 1、查找nginx镜像
@@ -216,4 +219,4 @@ docker ps -a
 
 ![](iNginxByDC\2022-04-24-15-34-45-image.png)
 
-##
+## 
