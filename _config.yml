@@ -141,6 +141,10 @@ electric_clock:
     type: class
     name: sticky_layout
     index: 0
+  loading: https://npm.elemecdn.com/hexo-butterfly-clock/lib/loading.gif #加载动画自定义
+  clock_css: https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.css
+  clock_js: https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.js
+  ip_api: https://pv.sohu.com/cityjson?ie=utf-8
 githubcalendar:
   enable: true
   enable_page: /
@@ -204,6 +208,9 @@ footer_beautify:
     - link: https://icp.gov.moe/?keyword=20221199
       shields: /images/micp.svg
       message: 萌ICP
+  swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css
+  swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js
+  swiperbdage_init_js: https://npm.elemecdn.com/hexo-butterfly-footer-beautify/lib/swiperbdage_init.min.js
 # artitalk see https://artitalk.js.org/
 # hexo-butterfly-artitalk-pro
 # see https://akilar.top/posts/f1004b1d/
