@@ -24,11 +24,10 @@ create table user
 # 2、java中建立复合主键的实体类
 
 ```java
-
 import lombok.Data;
 import javax.persistence.*;
 import java.io.Serializable;
- 
+
 @Data
 @Entity
 public class UserKey implements Serializable {
@@ -44,7 +43,7 @@ public class UserKey implements Serializable {
 ```java
 import lombok.Data;
 import javax.persistence.*;
- 
+
 @Data
 @Entity
 @Table(name = "user")
@@ -53,16 +52,15 @@ public class User {
     @Id
     @Column(nullable = false)
     private String username;
- 
+
     @Id
     @Column(nullable = false)
     private String phone;
- 
+
     @Column
     private String email;
- 
+
     @Column
     private String address;
 }
 ```
-

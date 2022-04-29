@@ -11,9 +11,10 @@ mathjax: true
 原题链接：[力扣204. 计数质数](https://leetcode-cn.com/problems/count-primes/)
 
 # 题目
-<p>给定整数 <code>n</code> ，返回 <em>所有小于非负整数&nbsp;<code>n</code>&nbsp;的质数的数量</em> 。</p>
 
-<p>&nbsp;</p>
+<p>给定整数 <code>n</code> ，返回 <em>所有小于非负整数 <code>n</code> 的质数的数量</em> 。</p>
+
+<p> </p>
 
 <p><strong>示例 1：</strong></p>
 
@@ -37,12 +38,12 @@ mathjax: true
 <strong>输出</strong>：0
 </pre>
 
-<p>&nbsp;</p>
+<p> </p>
 
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li><code>0 &lt;= n &lt;= 5 * 10<sup>6</sup></code></li>
+    <li><code>0 <= n <= 5 * 10<sup>6</sup></code></li>
 </ul>
 <div><div>Related Topics</div><div><li>数组</li><li>数学</li><li>枚举</li><li>数论</li></div></div>
 
@@ -53,6 +54,7 @@ mathjax: true
 这题我最开始想的比较简单，直接从0开始遍历到给定数字，遍历过程中判断是否是质数
 
 java代码如下：
+
 ```java
 class Solution {
     public int countPrimes(int n) {
@@ -89,6 +91,7 @@ class Solution {
     }
 }
 ```
+
 这种办法虽然例子过了，但是最后提交时却是超时了
 
 接下来，我又仔细的想了想，之后想到了一种办法，通过了，然后看了看题解，发现这完全就是埃拉托斯特
@@ -102,6 +105,7 @@ class Solution {
 <iframe frameborder=0 border=0 height=369 width=445 src="https://blog.huangge1199.cn/post/leetcode204/Sieve_of_Eratosthenes_animation.gif"></iframe>
 
 下面是我的java代码：
+
 ```java
 class Solution {
     public int countPrimes(int n) {

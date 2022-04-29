@@ -4,7 +4,7 @@
 
 # Site
 title: 龙儿之家
-subtitle: ''
+subtitle: 'blog.huangge1199.cn'
 description: '千里之行，始于足下'
 keywords:
 author: 轩辕龙儿
@@ -145,26 +145,6 @@ electric_clock:
   clock_css: https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.css
   clock_js: https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.js
   ip_api: https://pv.sohu.com/cityjson?ie=utf-8
-githubcalendar:
-  enable: true
-  enable_page: /
-  user: huangge1199
-  layout:
-    type: id
-    name: recent-posts
-    index: 0
-  githubcalendar_html: '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><div id="github_loading" style="width:10%;height:100%;margin:0 auto;display: block"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform></path></svg></div><div id="github_container"></div></div>'
-  pc_minheight: 280px
-  mobile_minheight: 0px
-# 以下色调选择喜欢的一行保留即可。其余注释。—————akilar的糖果色
-#  color: "['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8aa', '#f8df72', '#fcd217', '#fcc515', '#f28e16', '#fb8b05', '#d85916', '#f43e06']" #橘黄色调
-  color: "['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']" #浅紫色调
-#  color: "['#ebedf0', '#f0fff4', '#dcffe4', '#bef5cb', '#85e89d', '#34d058', '#28a745', '#22863a', '#176f2c', '#165c26', '#144620']" #翠绿色调
-#  color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']" #天青色调
-  api: https://python-github-calendar-api.vercel.app/api
-#  api: https://python-gitee-calendar-api.vercel.app/api
-  calendar_js: https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js
-  plus_style: ""
 live2d:
   enable: true
 markdown_it_plus:
@@ -261,3 +241,26 @@ wowjs:
       iteration: 2 #选填项，动画重复的次数
     - class: card-widget
       style: animate__zoomIn
+# hexo-filter-gitcalendar
+# see https://akilar.top/posts/1f9c68c9/
+gitcalendar:
+  enable: true # 开关
+#  priority: 5 #过滤器优先权
+  enable_page: / # 应用页面
+  # butterfly挂载容器
+  layout: # 挂载容器类型
+    type: id
+    name: recent-posts
+    index: 0
+  user: huangge1199 #git用户名
+  apiurl: 'https://python-github-calendar-api-jet-six.vercel.app'
+  minheight:
+    pc: 280px #桌面端最小高度
+    mibile: 0px #移动端最小高度
+#  color: "['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8aa', '#f8df72', '#fcd217', '#fcc515', '#f28e16', '#fb8b05', '#d85916', '#f43e06']" #橘黄色调
+  color: "['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']" #浅紫色调
+  # color: "['#ebedf0', '#f0fff4', '#dcffe4', '#bef5cb', '#85e89d', '#34d058', '#28a745', '#22863a', '#176f2c', '#165c26', '#144620']" #翠绿色调
+  # color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']" #天青色调
+  container: .recent-post-item(style='width:100%;height:auto;padding:10px;') #父元素容器，需要使用pug语法
+  gitcalendar_css: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css
+  gitcalendar_js: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js
