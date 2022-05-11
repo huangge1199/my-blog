@@ -133,8 +133,8 @@
       avatar: https://element.eleme.cn/favicon.ico
       descr: 一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库
     - name: Element Plus
-      link: https://element-plus.gitee.io/zh-CN/
-      avatar: https://element-plus.gitee.io/images/element-plus-logo-small.svg
+      link: https://element-plus.org/zh-CN/
+      avatar: https://element-plus.org/images/element-plus-logo-small.svg
       descr: 一个 Vue 3 UI 框架 | Element Plus
     - name: vant
       link: https://youzan.github.io/vant-weapp/#/home
@@ -156,6 +156,10 @@
       link: http://www.mavoneditor.com/
       avatar:
       descr: Vue的一款markdown插件
+    - name: Ant Design of Vue
+      link: https://www.antdv.com/
+      avatar: https://www.antdv.com/assets/logo.1ef800a8.svg
+      descr: ant-design-vue 为 Web 应用提供了丰富的基础 UI 组件，我们还将持续探索企业级应用的最佳 UI 实践。
 
 - class_name: 辅助工具
   link_list:
