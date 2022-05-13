@@ -108,6 +108,7 @@ deploy:
   type: 'git'
   repo: root@81.70.94.30:/app/hexo/hexo.git
   branch: master
+  token: huangge1199@
 aplayer:
   meting: true
   asset_inject: false
