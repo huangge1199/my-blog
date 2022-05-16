@@ -53,7 +53,7 @@ vagrant up
 
 等待完成，完成后，在VirtualBox主页：
 
-![](inRKE/2022-05-04-16-24-28-image.png)
+![](2022-05-04-16-24-28-image.png)
 
 # 虚拟机配置用户名密码ssh连接
 
@@ -100,7 +100,7 @@ vi /etc/selinux/config
 
 将第七行SELINUX=enforcing改为SELINUX=disabled
 
-![](inRKE/2022-05-04-17-23-24-image.png)
+![](2022-05-04-17-23-24-image.png)
 
 ## 2、禁用 swap
 
@@ -110,7 +110,7 @@ vi /etc/fstab
 
 使用 # 注释掉有 swap 的一行
 
-![](inRKE/2022-05-04-17-27-23-image.png)
+![](2022-05-04-17-27-23-image.png)
 
 ## 3、关闭防火墙
 
@@ -127,7 +127,7 @@ reboot
 free -h
 ```
 
-![](inRKE/2022-05-04-17-33-11-image.png)
+![](2022-05-04-17-33-11-image.png)
 
 ## 5、设置用户
 
@@ -147,7 +147,7 @@ passwd rke
 
 中途需要输入2次密码
 
-![](inRKE/2022-05-04-17-38-29-image.png)
+![](2022-05-04-17-38-29-image.png)
 
 确认新用户是否有权限：
 
@@ -156,7 +156,7 @@ su rke
 docker ps -a
 ```
 
-![](inRKE/2022-05-04-17-40-07-image.png)
+![](2022-05-04-17-40-07-image.png)
 
 ## 6、设置SSH
 
@@ -171,7 +171,7 @@ ssh-copy-id rke@172.17.8.103
 
 第一个红框位置输入yes，第二个红框位置输入密码
 
-![](inRKE/2022-05-04-17-46-31-image.png)
+![](2022-05-04-17-46-31-image.png)
 
 # 编辑rke.yaml
 
@@ -249,7 +249,7 @@ wget https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.4/aio/deploy/re
 
 下面标红框的地方为新增加的：
 
-![](inRKE/2022-05-04-19-41-19-image.png)
+![](2022-05-04-19-41-19-image.png)
 
 ## 3、执行yaml文件
 
@@ -265,13 +265,13 @@ kubectl get all -n kubernetes-dashboard
 
 下面红框的可以看出服务已经运行了
 
-![](inRKE/2022-05-04-19-47-43-image.png)
+![](2022-05-04-19-47-43-image.png)
 
 ## 5、接下来浏览器访问
 
 IP：30010，端口就是你在第二步中添加的，输入网址后，点击高级继续访问就出现下面的页面了
 
-![](inRKE/2022-05-04-19-48-18-image.png)
+![](2022-05-04-19-48-18-image.png)
 
 ## 6、创建登录用户信息
 
@@ -317,7 +317,7 @@ kubectl apply -f admin-role.yaml
 
 ```
 
-![](inRKE/2022-05-04-20-50-13-image.png)
+![](2022-05-04-20-50-13-image.png)
 
 在执行下面的命令：
 
@@ -327,4 +327,4 @@ kubectl -n kube-system describe secret 红框的名字
 
 红框内就是token
 
-![](inRKE/2022-05-04-20-50-57-image.png)
+![](2022-05-04-20-50-57-image.png)

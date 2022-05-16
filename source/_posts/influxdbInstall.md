@@ -12,7 +12,7 @@ cover: https://blog.huangge1199.cn/post/jpaCompositePK/bg.jpg
 wget https://dl.influxdata.com/influxdb/releases/influxdb-1.8.10.x86_64.rpm
 ```
 
-![](influxdbInstall/2022-03-12-18-28-41-image.png)
+![](2022-03-12-18-28-41-image.png)
 
 # 2、安装
 
@@ -28,11 +28,11 @@ vim /etc/influxdb/influxdb.conf
 
 用户名密码（非必须）
 
-![](influxdbInstall/2022-03-12-18-41-44-image.png)
+![](2022-03-12-18-41-44-image.png)
 
 开启influx功能
 
-![](influxdbInstall/2022-03-12-18-42-25-image.png)
+![](2022-03-12-18-42-25-image.png)
 
 # 4、启动服务
 
@@ -61,7 +61,7 @@ CREATE USER root WITH PASSWORD 'root' WITH ALL PRIVILEGES
 influx -host ip地址 -port 端口号
 ```
 
-![](influxdbInstall/2022-03-12-18-54-58-image.png)
+![](2022-03-12-18-54-58-image.png)
 
 这里创建数据库时报错，是因为我这边配置了用户名和密码，需要连接时带上用户名和密码才行
 
@@ -69,4 +69,4 @@ influx -host ip地址 -port 端口号
 iinflux -host ip地址 -port 端口号 -username 用户名 -password 密码
 ```
 
-![](influxdbInstall/2022-03-12-18-56-23-image.png)
+![](2022-03-12-18-56-23-image.png)

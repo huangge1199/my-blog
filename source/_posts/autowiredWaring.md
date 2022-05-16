@@ -27,7 +27,7 @@ public class UserController {
 
 如下：
 
-![](https://blog.huangge1199.cn/post/autowiredWaring/2022-03-28-11-30-49-1648438205(1).png)
+![](2022-03-28-11-30-49-1648438205(1).png)
 
 ## 解决办法
 

@@ -16,7 +16,7 @@ docker中安装MySQL
 docker pull mysql:5.7
 ```
 
-![img.png](iMySQLByDC/img.png)
+![img.png](img.png)
 
 # 2、编写docker-compose.yml文件
 
@@ -44,7 +44,7 @@ services:
 
 根据docker-compose.yml文件创建对应目录文件
 
-![](iMySQLByDC/2022-04-24-16-20-33-image.png)
+![](2022-04-24-16-20-33-image.png)
 
 # 4、编写MySQL的配置文件
 
@@ -66,8 +66,8 @@ server_id=1
 docker-compose up -d
 ```
 
-![](iMySQLByDC/2022-04-24-16-30-32-image.png)
+![](2022-04-24-16-30-32-image.png)
 
 # 6、远程连接验证结果
 
-![](iMySQLByDC/2022-04-24-16-45-29-image.png)
+![](2022-04-24-16-45-29-image.png)

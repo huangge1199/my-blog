@@ -102,7 +102,7 @@ class Solution {
 
 我在维基百科上看到了这个小动画，就是这个算法的整体步骤了
 
-<iframe frameborder=0 border=0 height=369 width=445 src="https://blog.huangge1199.cn/post/leetcode204/Sieve_of_Eratosthenes_animation.gif"></iframe>
+<iframe frameborder=0 border=0 height=369 width=445 src="Sieve_of_Eratosthenes_animation.gif"></iframe>
 
 下面是我的java代码：
 

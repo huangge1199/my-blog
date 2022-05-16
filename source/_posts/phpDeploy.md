@@ -21,40 +21,40 @@ categories: [PHP]
 
 打开File-->Setting
 
-![](phpDeploy/2022-04-30-16-52-00-image.png)
+![](2022-04-30-16-52-00-image.png)
 
 左侧Build,Execution,Deployment-->Deployment，然后右侧加号添加配置选择SFTP
 
-![](phpDeploy/2022-04-30-16-54-56-image.png)
+![](2022-04-30-16-54-56-image.png)
 
 弹出的窗口内输入配置的名称，可随意输入，方便记住就好
 
-![](phpDeploy/2022-04-30-20-14-03-image.png)
+![](2022-04-30-20-14-03-image.png)
 
 点击红框的位置添加ssh连接
 
-![](phpDeploy/2022-04-30-20-12-36-image.png)
+![](2022-04-30-20-12-36-image.png)
 
 在弹出的窗口点击 加号，右边配置
 
-![](phpDeploy/2022-04-30-20-20-22-image.png)
+![](2022-04-30-20-20-22-image.png)
 
 点击OK后，ssh会自动添加上，同时再把IP加入到下面的红框内
 
-![](phpDeploy/2022-04-30-20-32-37-image.png)
+![](2022-04-30-20-32-37-image.png)
 
 ## 2、设置文件映射关系
 
 点击mapping，将服务器上项目的根目录添加到Deployment Path中，如果点击OK
 
-![](phpDeploy/2022-04-30-20-35-23-image.png)
+![](2022-04-30-20-35-23-image.png)
 
 ## 3、设置自动上传
 
 在PhpStorm中依次点击Tool-->Deployment-->Options...
 
-![](phpDeploy/2022-04-30-20-42-16-image.png)
+![](2022-04-30-20-42-16-image.png)
 
 在弹出的窗口中，将红框下拉框设置成第二个，之后只要按Ctrl+S就可将修改的代码上传到服务器上
 
-![](phpDeploy/2022-04-30-20-44-58-image.png)
+![](2022-04-30-20-44-58-image.png)

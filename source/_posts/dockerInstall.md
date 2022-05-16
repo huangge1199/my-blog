@@ -21,7 +21,7 @@ yum remove docker \
                   docker-engine
 ```
 
-![](dockerInstall/2022-04-20-23-44-07-image.png)
+![](2022-04-20-23-44-07-image.png)
 
 # 2、设置docker软件源
 
@@ -36,11 +36,11 @@ yum-config-manager \
     https://download.docker.com/linux/centos/docker-ce.repo
 ```
 
-![](dockerInstall/2022-04-20-23-47-39-image.png)
+![](2022-04-20-23-47-39-image.png)
 
 阿里软件源：
 
-![](dockerInstall/2022-04-21-00-00-59-image.png)
+![](2022-04-21-00-00-59-image.png)
 
 # 3、安装docker
 
@@ -50,11 +50,11 @@ yum install docker-ce docker-ce-cli containerd.io
 
 命令输入后，中途出现下面的内容，输入`y`，然后按回车确认
 
-![](dockerInstall/2022-04-20-23-50-06-image.png)
+![](2022-04-20-23-50-06-image.png)
 
 中途出现下面的内容，输入`y`，然后按回车确认
 
-![](dockerInstall/2022-04-21-00-05-16-image.png)
+![](2022-04-21-00-05-16-image.png)
 
 # 4、更改docker仓库地址，用Docker中国区官方替换掉，要不之后拉取镜像速度太慢了
 
@@ -76,7 +76,7 @@ daemon.json内容：
 systemctl start docker
 ```
 
-![](dockerInstall/2022-04-21-00-22-21-image.png)
+![](2022-04-21-00-22-21-image.png)
 
 # 6、设置开机启动docker
 
@@ -84,7 +84,7 @@ systemctl start docker
 systemctl enable docker
 ```
 
-![](dockerInstall/2022-04-21-00-22-43-image.png)
+![](2022-04-21-00-22-43-image.png)
 
 # 7、验证
 
