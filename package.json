@@ -37,7 +37,7 @@
     "hexo-tag-aplayer": "^3.0.4",
     "hexo-tag-cloud": "^2.1.2",
     "hexo-tag-steamgame": "^1.0.0",
-    "hexo-theme-butterfly": "^4.1.0",
+    "hexo-theme-butterfly": "^4.2.1",
     "hexo-wordcount": "^6.0.1"
   }
 }
