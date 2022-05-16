@@ -65,7 +65,7 @@ algolia_search:
 local_search:
   enable: true
 search:
-  path: https://blog.huangge1199.cn/
+  path: search.xml
   field: all
   content: true
 
