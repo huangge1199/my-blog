@@ -322,7 +322,7 @@ kubectl apply -f admin-role.yaml
 在执行下面的命令：
 
 ```shell
-kubectl describe secret 红框的名字 -n kubernetes-dashboard
+kubectl -n kube-system describe secret 红框的名字
 ```
 
 红框内就是token
