@@ -121,6 +121,10 @@
       link: https://www.emqx.com/zh/mqtt
       avatar: https://www.emqx.com/favicon.ico
       descr: MQTT - 轻量级的物联网消息传输协议
+    - name: powerjob
+      link: http://www.powerjob.tech/
+      avatar: https://blog.huangge1199.cn/link/powerjob.ico
+      descr: 新一代分布式任务调度与计算框架，支持CRON、API、固定频率、固定延迟等调度策略，提供工作流来编排任务解决依赖关系，使用简单，功能强大，文档齐全。
 
 - class_name: 前端开发
   link_list:
