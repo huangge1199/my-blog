@@ -2,7 +2,7 @@
 title: 力扣周赛292题解
 date: 2022-05-10 14:01:37
 tags: [力扣]
-categories: [算法,力扣]
+categories: [算法,力扣,周赛]
 ---
 
 # 第一题
