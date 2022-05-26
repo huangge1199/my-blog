@@ -1,7 +1,7 @@
 ---
 title: seata1.4.1服务端部署及应用
 date: 2022-02-02 09:37:59
-tags: [java,seata]
+tags: [java,seata,安装部署]
 categories: [java,seata]
 ---
 # seata1.4.1服务端部署及应用
@@ -45,8 +45,6 @@ docker run --rm --name seata-server -d -p 8091:8091 seataio/seata-server:1.4.1
 ```shell
 docker cp d5cd81d60189:/seata-server/resources/ ./conf/
 ```
-
-![](https://file.huangge1199.cn/group1/M00/00/00/CgAYB2H54uCAAGPGAAALD6FSnY8866.png)
 
 ## 1.4 修改conf/registry.conf文件
 
