@@ -2,7 +2,7 @@
 
 title: 用docker-compose安装nginx
 date: 2022-04-24 15:36:52
-tags: [docker]
+tags: [docker,安装部署]
 categories: [docker]
 
 ---

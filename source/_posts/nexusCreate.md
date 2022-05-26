@@ -1,7 +1,7 @@
 ---
 title: 用nexus部署maven私服
 date: 2022-01-12 19:52:40
-tags: [maven,nexus]
+tags: [maven,nexus,安装部署]
 categories: nexus
 cover: bg.jpeg
 ---

@@ -1,7 +1,7 @@
 ---
 title: docker-compose安装Redis
 date: 2022-04-24 16:53:43
-tags: [docker]
+tags: [docker,安装部署]
 categories: [docker]
 ---
 
