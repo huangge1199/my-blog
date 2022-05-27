@@ -14,7 +14,7 @@
   "dependencies": {
     "aplayer": "^1.10.1",
     "gitalk": "^1.7.2",
-    "hexo": "^5.4.2",
+    "hexo": "^6.2.0",
     "hexo-butterfly-artitalk-pro": "^1.0.5",
     "hexo-butterfly-clock": "^1.0.7",
     "hexo-butterfly-douban": "^1.2.5",
