@@ -265,3 +265,14 @@ gitcalendar:
   container: .recent-post-item(style='width:100%;height:auto;padding:10px;') #父元素容器，需要使用pug语法
   gitcalendar_css: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css
   gitcalendar_js: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js
+# hexo-offline-popup.
+service_worker:
+  maximumFileSizeToCacheInBytes: 3145728 # 缓存的最大文件大小，以字节为单位，此处设置为3MB。
+  staticFileGlobs:
+    - public/**/*.{js,html,xml,css,png,jpg,gif,svg,webp,eot,ttf,woff,woff2}
+    # - public/**/*.{html,xml} #精简版使用这行即可
+  # 静态文件合集，如果你的站点使用了例如webp格式的文件，请将文件类型添加进去。。
+  # 注意，此处的文件类型就是会缓存下来的所有文件类型，如果不需要缓存那么多，
+  # 而只是想判断网页更新与否，缓存html和xml即可。
+  stripPrefix: public
+  verbose: false
