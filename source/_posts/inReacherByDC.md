@@ -2,7 +2,7 @@
 title: 一条命令运行rancher（未完成）
 date: 2022-05-26 08:49:12
 tags: [docker,安装部署]
-categories: [docker]
+categories: [云原生]
 ---
 
 # 1、命令行操作部分

@@ -1,5 +1,4 @@
 ---
-
 title: 用docker-compose安装nginx
 date: 2022-04-24 15:36:52
 tags: [docker,安装部署]
@@ -219,4 +218,4 @@ docker ps -a
 
 ![](2022-04-24-15-34-45-image.png)
 
-## 
+ 
