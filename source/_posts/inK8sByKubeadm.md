@@ -207,7 +207,7 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 ```
 
-注：如果raw.githubusercontent.com这个网址连接不上，可以在当前目录新建文件kube-flannel.yml替换网络文件
+注：如果连接不上，可以在当前目录新建文件kube-flannel.yml替换掉文件
 
 kube-flannel.yml内容：
 
@@ -466,9 +466,13 @@ spec:
 
 在第5步`kubeadm init`命令输出的日志中，最后几行有需要执行的命令，那个命令拿出来直接在node2和node3上运行就可以了（token的有效期是24小时，超过了需要重新生成）
 
-当然，如果你想我一样，忘记复制了还恰好关掉了远程，那么可以再生成一个新的
+当然，如果你想我一样，忘记复制了还恰好关掉了远程，那么就有两种方式可以解决
 
-执行下面的命令生成新的token：
+- 通过生成新的token显示命令（对应8.1操作）
+
+- 直接查看token（对应8.2操作）
+
+8.1、执行下面的命令生成新的token：
 
 ```shell
 kubeadm token create --print-join-command
@@ -488,4 +492,66 @@ kubeadm token create --print-join-command
 kubectl get nodes
 ```
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadm/2022-06-04-19-31-22-image.png)
+![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadm/2022-06-04-19-58-04-image.png)
+
+8.2、查看token命令获取
+
+```shell
+kubeadm token list
+```
+
+![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadm/2022-06-04-20-54-08-image.png)
+
+主节点：
+
+```shell
+# 查看节点
+kubectl get nodes
+```
+
+![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadm/2022-06-04-21-15-08-image.png)
+
+节点3：
+
+```shell
+kubeadm join 172.17.8.51:6443 --token o15q87.xtnzlfis6gtez1x6 --discovery-token-unsafe-skip-ca-verification
+```
+
+ ![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadm/2022-06-04-21-22-21-image.png)
+
+主节点：
+
+```shell
+# 查看节点
+kubectl get nodes
+```
+
+![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadm/2022-06-04-21-22-55-image.png)
+
+# 9、集群中移除节点
+
+主节点执行：
+
+```shell
+# 查看节点
+kubectl get nodes
+# 移除节点3
+kubectl delete node node3
+# 查看节点
+kubectl get nodes
+```
+
+![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadm/2022-06-04-20-59-19-image.png)
+
+删除的节点执行：
+
+```shell
+kubeadm reset
+systemctl stop kubelet
+systemctl stop docker
+rm -rf /var/lib/cni/
+rm -rf /var/lib/kubelet/*
+rm -rf /etc/cni/
+systemctl start docker
+systemctl start kubelet
+```
