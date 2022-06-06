@@ -1,6 +1,6 @@
 ---
 title: deepin下安装git
-date: date: 2022-06-03 14:30:52
+date: 022-06-03 14:30:52
 tags: [deepin,安装部署]
 categories: [安装部署]
 ---
@@ -15,7 +15,7 @@ categories: [安装部署]
 sudo apt-get install git
 ```
 
-![image-20220603103757605](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inGitByOsDeepin/image-20220603103757605.png)
+![image-20220603103757605](inGitByOsDeepin/image-20220603103757605.png)
 
 # 2、确认git安装成功
 
@@ -25,7 +25,7 @@ sudo apt-get install git
 git --version
 ```
 
-![image-20220603103959058](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inGitByOsDeepin/image-20220603103959058.png)
+![image-20220603103959058](inGitByOsDeepin/image-20220603103959058.png)
 
 # 3、配置git全局用户名和邮箱
 
@@ -35,7 +35,7 @@ git --version
 git config --global user.name "用户名"
 ```
 
-![image-20220603104225094](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inGitByOsDeepin/image-20220603104225094.png)
+![image-20220603104225094](inGitByOsDeepin/image-20220603104225094.png)
 
 配置全局邮箱：
 
@@ -43,7 +43,7 @@ git config --global user.name "用户名"
 git config --global user.email "邮箱"
 ```
 
-![image-20220603104335664](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inGitByOsDeepin/image-20220603104335664.png)
+![image-20220603104335664](inGitByOsDeepin/image-20220603104335664.png)
 
 # 4、确认配置结果
 
@@ -53,4 +53,4 @@ git config --global user.email "邮箱"
 git config --list
 ```
 
-![image-20220603104447770](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inGitByOsDeepin/image-20220603104447770.png)
+![image-20220603104447770](inGitByOsDeepin/image-20220603104447770.png)

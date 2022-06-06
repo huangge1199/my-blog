@@ -47,7 +47,7 @@ marked:
 relative_link: false
 future: true
 highlight:
-  enable: false
+  enable: true
   line_number: true
   auto_detect: false
   tab_replace: ''
@@ -109,45 +109,6 @@ deploy:
   repo: root@81.70.94.30:/app/hexo/hexo.git
   branch: master
   token: huangge1199@
-aplayer:
-  meting: true
-  asset_inject: false
-douban:
-  user: 255047863
-  builtin: true
-  book:
-    title: '书籍'
-    quote: '这是我关注的相关书籍'
-    meta: true
-    comments: true
-    top_img: https://cccccc.png
-    aside: true
-    path: books
-    limit:
-  movie:
-    title: '电影'
-    quote: '这是我关注的相关电影'
-    meta: true
-    comments: true
-    top_img: https://cccccc.png
-    aside: true
-    path: movies
-    limit:
-  timeout: 10000
-electric_clock:
-  priority: 5
-  enable: true
-  enable_page: all
-  layout:
-    type: class
-    name: sticky_layout
-    index: 0
-  loading: https://npm.elemecdn.com/hexo-butterfly-clock/lib/loading.gif #加载动画自定义
-  clock_css: https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.css
-  clock_js: https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.js
-  ip_api: https://pv.sohu.com/cityjson?ie=utf-8
-live2d:
-  enable: true
 markdown_it_plus:
   plugins:
     - plugin:
@@ -155,6 +116,30 @@ markdown_it_plus:
       enable: true
       options:
         strict: false
+# 主题外的插件
+# 看板娘
+live2d:
+  enable: true
+# 信封样式留言板
+# see https://akilar.top/posts/e2d3c450/
+envelope_comment:
+  enable: true #控制开关
+  custom_pic:
+    cover: https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/violet.jpg #信笺头部图片
+    line: https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/line.png #信笺底部图片
+    beforeimg: https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/before.png # 信封前半部分
+    afterimg: https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/after.png # 信封后半部分
+  message: #信笺正文，多行文本，写法如下
+    - 有什么想问的？
+    - 有什么想说的？
+    - 有什么想吐槽的？
+    - 哪怕是有什么想吃的，都可以告诉我哦~
+  bottom: 自动书记人偶竭诚为您服务！ #仅支持单行文本
+  height: #1050px，信封划出的高度
+  path: #【可选】comments 的路径名称。默认为 comments，生成的页面为 comments/index.html
+  front_matter: #【可选】comments页面的 front_matter 配置
+    title: 留言板
+    comments: true
 # footer_beautify
 # 页脚计时器：[Native JS Timer](https://akilar.top/posts/b941af/)
 # 页脚徽标：[Add Github Badge](https://akilar.top/posts/e87ad7f8/)
@@ -192,43 +177,7 @@ footer_beautify:
   swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css
   swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js
   swiperbdage_init_js: https://npm.elemecdn.com/hexo-butterfly-footer-beautify/lib/swiperbdage_init.min.js
-# artitalk see https://artitalk.js.org/
-# hexo-butterfly-artitalk-pro
-# see https://akilar.top/posts/f1004b1d/
-# 侧边栏碎碎念以及说说
-artitalk:
-  enable:
-    card: true # 侧边栏开关
-    page: true #页面开关
-  # 侧栏相关配置项
-  priority: 5 #过滤器优先权
-  enable_page: all # 应用页面
-  layout: # 挂载容器类型
-    type: class
-    name: sticky_layout
-    index: 0
-  # 页面相关配置项
-  path: artitalk
-  front_matter:
-    title: 说说
-  # 公共配置项
-  appId: 9VsUIPV2hlatrkyhLTBI5M1k-MdYXbMMI
-  appKey: rl3c1HPBJ45plyXE0q36DAXA
-  exclude:
-    - /artitalk/
-    - /posts/ #需要abbrlink插件支持
-  js: https://npm.elemecdn.com/artitalk
-  card_css: https://npm.elemecdn.com/hexo-butterfly-artitalk-pro/lib/card.css
-  card_visual_js: https://npm.elemecdn.com/hexo-butterfly-artitalk-pro/lib/card_visual.js
-  option:
-    serverURL: https://9VsUIPV2.api.lncldglobal.com #将此处的********替换为你的appId前八位
-    lang: zh
-    pageSize: 3
-    color1: '#49b1f5'
-    color2: '#00c4b6'
-    atEmoji: {
-      'Mafumafu1':'https://cdn.jsdelivr.net/gh/GamerNoTitle/ValineCDN@master/Mafumafu/199749454.png',
-      'Mafumafu2':'https://cdn.jsdelivr.net/gh/GamerNoTitle/ValineCDN@master/Mafumafu/199749455.png'}
+# 动画效果
 wowjs:
   enable: true #控制动画开关。true是打开，false是关闭
   priority: 10 #过滤器优先级
@@ -242,37 +191,48 @@ wowjs:
       iteration: 2 #选填项，动画重复的次数
     - class: card-widget
       style: animate__zoomIn
-# hexo-filter-gitcalendar
-# see https://akilar.top/posts/1f9c68c9/
-gitcalendar:
-  enable: true # 开关
-  priority: 3 #过滤器优先权
-  enable_page: / # 应用页面
-  # butterfly挂载容器
-  layout: # 挂载容器类型
-    type: id
-    name: recent-posts
+  animate_css: https://unpkg.zhimg.com/hexo-butterfly-wowjs/lib/animate.min.css
+  wow_js: https://unpkg.zhimg.com/hexo-butterfly-wowjs/lib/wow.min.js
+  wow_init_js: https://unpkg.zhimg.com/hexo-butterfly-wowjs/lib/wow_init.js
+  # artitalk see https://artitalk.js.org/
+  # hexo-butterfly-artitalk-pro
+  # see https://akilar.top/posts/f1004b1d/
+# 侧边栏电子钟
+electric_clock:
+  priority: 5
+  enable: true
+  enable_page: all
+  layout:
+    type: class
+    name: sticky_layout
     index: 0
-  user: huangge1199 #git用户名
-  apiurl: 'https://python-github-calendar-api-jet-six.vercel.app'
-  minheight:
-    pc: 280px #桌面端最小高度
-    mibile: 0px #移动端最小高度
-#  color: "['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8aa', '#f8df72', '#fcd217', '#fcc515', '#f28e16', '#fb8b05', '#d85916', '#f43e06']" #橘黄色调
-  color: "['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']" #浅紫色调
-  # color: "['#ebedf0', '#f0fff4', '#dcffe4', '#bef5cb', '#85e89d', '#34d058', '#28a745', '#22863a', '#176f2c', '#165c26', '#144620']" #翠绿色调
-  # color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']" #天青色调
-  container: .recent-post-item(style='width:100%;height:auto;padding:10px;') #父元素容器，需要使用pug语法
-  gitcalendar_css: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css
-  gitcalendar_js: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js
-# hexo-offline-popup.
-service_worker:
-  maximumFileSizeToCacheInBytes: 3145728 # 缓存的最大文件大小，以字节为单位，此处设置为3MB。
-  staticFileGlobs:
-    - public/**/*.{js,html,xml,css,png,jpg,gif,svg,webp,eot,ttf,woff,woff2}
-    # - public/**/*.{html,xml} #精简版使用这行即可
-  # 静态文件合集，如果你的站点使用了例如webp格式的文件，请将文件类型添加进去。。
-  # 注意，此处的文件类型就是会缓存下来的所有文件类型，如果不需要缓存那么多，
-  # 而只是想判断网页更新与否，缓存html和xml即可。
-  stripPrefix: public
-  verbose: false
+  loading: https://npm.elemecdn.com/hexo-butterfly-clock/lib/loading.gif #加载动画自定义
+  clock_css: https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.css
+  clock_js: https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.js
+  ip_api: https://pv.sohu.com/cityjson?ie=utf-8
+# 豆瓣
+douban:
+  user: 255047863
+  builtin: true
+  book:
+    title: '书籍'
+    quote: '这是我关注的相关书籍'
+    meta: true
+    comments: true
+    top_img: https://cccccc.png
+    aside: true
+    path: books
+    limit:
+  movie:
+    title: '电影'
+    quote: '这是我关注的相关电影'
+    meta: true
+    comments: true
+    top_img: https://cccccc.png
+    aside: true
+    path: movies
+    limit:
+  timeout: 10000
+aplayer:
+  meting: true
+  asset_inject: false

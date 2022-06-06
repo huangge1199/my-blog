@@ -1,6 +1,0 @@
-top:
-  - class_name: weather
-    id_name: weather
-    name: 和风天气
-    icon: fas
-    html: <div id="he-plugin-standard"></div> <script> WIDGET = {"CONFIG":{"layout":"2","width":"260","height":"280","background":"1","dataColor":"FFFFFF","borderRadius":"15","key":"bf6b4fdd5318487c81962e3b65b643ac"}} </script> <script src="https://widget.qweather.net/standard/static/js/he-standard-common.js?v=2.0"></script>

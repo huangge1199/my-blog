@@ -23,7 +23,7 @@ npm install -g vue-cli		//vue2.0
 
 我这边安装的是3.0版本的
 
-![image-20220603114033774](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inVueByOsDeepin/image-20220603114033774.png)
+![image-20220603114033774](inVueByOsDeepin/image-20220603114033774.png)
 
 # 3、全局安装webpack
 
@@ -31,7 +31,7 @@ npm install -g vue-cli		//vue2.0
 npm install -g webpack
 ```
 
-![image-20220603114219499](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inVueByOsDeepin/image-20220603114219499.png)
+![image-20220603114219499](inVueByOsDeepin/image-20220603114219499.png)
 
 # 4、创建软链接
 
@@ -44,7 +44,7 @@ sudo ln -s /home/deepin/app/node/bin/webpack /usr/local/bin/
 sudo ls -l /usr/local/bin/
 ```
 
-![image-20220603114513508](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inVueByOsDeepin/image-20220603114513508.png)
+![image-20220603114513508](inVueByOsDeepin/image-20220603114513508.png)
 
 # 5、查看Vue版本
 
@@ -52,4 +52,4 @@ sudo ls -l /usr/local/bin/
 vue --version
 ```
 
-![image-20220603114616673](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inVueByOsDeepin/image-20220603114616673.png)
+![image-20220603114616673](inVueByOsDeepin/image-20220603114616673.png)

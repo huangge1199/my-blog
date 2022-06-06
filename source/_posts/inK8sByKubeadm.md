@@ -40,7 +40,7 @@ vi /etc/selinux/config
 
 将第七行SELINUX=enforcing改为SELINUX=disabled
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inRKE/2022-05-04-17-23-24-image.png)
+![](inRKE/2022-05-04-17-23-24-image.png)
 {% endhideToggle %}
 
 swap已经关闭
@@ -54,7 +54,7 @@ vi /etc/fstab
 
 使用 # 注释掉有 swap 的一行
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inRKE/2022-05-04-17-27-23-image.png)
+![](inRKE/2022-05-04-17-27-23-image.png)
 {% endhideToggle %}
 
 防火墙、SELinux、swap关闭验证：
@@ -65,7 +65,7 @@ reboot
 free -h
 ```
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inRKE/2022-05-04-17-33-11-image.png)
+![](inRKE/2022-05-04-17-33-11-image.png)
 
 # 2、安装 kubeadm，kubelet 和 kubectl
 
