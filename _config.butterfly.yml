@@ -307,8 +307,8 @@ livere:
 # gitalk
 # https://github.com/gitalk/gitalk
 gitalk:
-  client_id: dedf289a2eba979180b6
-  client_secret: cea44f4813217699c5f8d5d2e32b4d40208fccb8
+  client_id: git的client_id
+  client_secret: git的client_secret
   repo: talk
   owner: huangge1199
   admin: huangge1199
@@ -322,8 +322,8 @@ gitalk:
 # valine
 # https://valine.js.org
 valine:
-  appId: IuJBNAtLQ0dMuOcd8Nu2NUal-gzGzoHsz
-  appKey: wwnT2jD9tnuNUdnMBeDULo1T
+  appId: valine获取的appId
+  appKey: valine获取的appKey
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
   lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
   placeholder: Please leave your footprints # valine comment input placeholder (like: Please leave your footprints)
@@ -476,12 +476,10 @@ google_adsense:
 # --------------------------------------
 
 site_verification:
-  - name: google-site-verification
-    content: FxkYjNBCJZOs0ML_UVxOh-ijoCjOcKoKTceAp15tLAo
-  - name: baidu-site-verification
-    content: code-tKtY564mM9
-  - name: msvalidate.01
-    content: E0CD0ADED1978FFEE89AFA1D506536B3
+# - name: google-site-verification
+#   content: xxxxxx
+# - name: baidu-site-verification
+#   content: xxxxxxx
 
 # Beautify/Effect (美化/效果)
 # --------------------------------------
@@ -950,8 +948,8 @@ artitalk:
   front_matter:
     title: 碎碎念
   # 公共配置项
-  appId: #APPID
-  appKey: #appKey
+  appId: 9VsUIPV2hlatrkyhLTBI5M1k-MdYXbMMI
+  appKey: rl3c1HPBJ45plyXE0q36DAXA
   exclude:
     - /artitalk/
     - /posts/ #需要abbrlink插件支持
