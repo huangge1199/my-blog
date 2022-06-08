@@ -21,7 +21,7 @@ menu:
     书籍: /books/ || fas fa-book
     音乐: /music/ || fas fa-music
     电影: /movies/ || fas fa-video
-#    游戏: /steamgames/
+    游戏: /steamgames/
   网址大全: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
 
@@ -953,9 +953,9 @@ artitalk:
   exclude:
     - /artitalk/
     - /posts/ #需要abbrlink插件支持
-  js: https://unpkg.zhimg.com/artitalk
-  card_css: https://unpkg.zhimg.com/hexo-butterfly-artitalk-pro/lib/card.css
-  card_visual_js: https://unpkg.zhimg.com/hexo-butterfly-artitalk-pro/lib/card_visual.js
+  js: /hexo-butterfly-artitalk-pro/artitalk
+  card_css: /hexo-butterfly-artitalk-pro/card.css
+  card_visual_js: /hexo-butterfly-artitalk-pro/card_visual.js
   option:
     serverURL: https://9VsUIPV2.api.lncldglobal.com #将此处的********替换为你的appId前八位
     lang: zh
