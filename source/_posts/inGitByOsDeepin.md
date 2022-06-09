@@ -1,6 +1,6 @@
 ---
 title: deepin下安装git
-date: 022-06-03 14:30:52
+date: 2022-06-03 14:30:52
 tags: [deepin,安装部署]
 categories: [安装部署]
 ---
