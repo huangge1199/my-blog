@@ -1,7 +1,7 @@
 ---
 title: 一条命令运行rancher
 date: 2022-05-26 08:49:12
-tags: [docker,安装部署]
+tags: [docker,安装部署,云原生]
 categories: [云原生]
 ---
 
