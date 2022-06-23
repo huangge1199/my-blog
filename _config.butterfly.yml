@@ -863,7 +863,8 @@ inject:
     - <meta name="360-site-verification" content="c45b8e2dba5da15cf770a1456fa7635f" />
     - <script src="/live2d-widget/autoload.js"></script>
     - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-    - <script>LA.init({id: "Jj9MNcDNO03dwLuJ",ck: "Jj9MNcDNO03dwLuJ" })</script>
+    - <script> LA.init({id:"Jj9MNcDNO03dwLuJ",ck:"Jj9MNcDNO03dwLuJ" })</script>
+    - <link rel="stylesheet" href="/css/aplayer.css"  media="defer" onload="this.media='all'">
   bottom:
     # - <script src="xxxx"></script>
     - <div class="aplayer no-destroy" data-id="8108589105" data-server="tencent" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
