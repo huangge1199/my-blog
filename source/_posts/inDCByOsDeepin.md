@@ -1,5 +1,5 @@
 ---
-title: deepin系统下docker-compose安装MySQL
+title: deepin下安装docker-compose
 date: 2022-07-05 21:57:49
 tags: [docker,deepin]
 categories: [docker,deepin]
