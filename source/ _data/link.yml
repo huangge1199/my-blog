@@ -1,3 +1,10 @@
+- class_name: 友链
+  link_list:
+    - name: Akilarの糖果屋
+      link: https://akilar.top/
+      avatar: https://npm.elemecdn.com/akilar-candyassets/image/siteicon/favicon.png
+      descr: 期待您的光临！
+      siteshot: https://cdn.jsdelivr.net/gh/Akilarlxh/ScreenShot@gh-pages/akilar.top.jpg
 - class_name: 博客相关
   link_list:
     - name: Hexo
