@@ -13,7 +13,6 @@ menu:
     时间轴: /archives/ || fas fa-archive
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
-  朋友圈: /friends/ || fa-fw fas fa-comment-dots
   留言板: /comments/ || fa-fw fas fa-comment-dots
   #  照片: /Gallery/ || fas fa-images
   娱乐||fa fa-heartbeat:
