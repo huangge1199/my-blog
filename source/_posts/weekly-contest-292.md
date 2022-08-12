@@ -13,7 +13,7 @@ categories: [算法,力扣,周赛]
 
 ## 单个题解：
 
-[力扣2264. 字符串中最大的 3 位相同数字](https://site.huangge1199.cn/211.html)
+[力扣2264. 字符串中最大的 3 位相同数字](http://192.168.0.198:5080/post/largest-3-same-digit-number-in-string/)
 
 ## 题解：
 
@@ -42,7 +42,7 @@ public String largestGoodInteger(String num) {
 
 ## 单个题解：
 
-[力扣6057. 统计值等于子树平均值的节点数](https://site.huangge1199.cn/213.html)
+[力扣6057. 统计值等于子树平均值的节点数](http://192.168.0.198:5080/post/count-nodes-equal-to-average-of-subtree/)
 
 ## 题解：
 
@@ -94,7 +94,7 @@ class Solution {
 
 ## 单个题解：
 
-[力扣2267. 检查是否有合法括号字符串路径](https://site.huangge1199.cn/215.html)
+[力扣2267. 检查是否有合法括号字符串路径](http://192.168.0.198:5080/post/check-if-there-is-a-valid-parentheses-string-path/)
 
 ## 题解：
 
@@ -161,7 +161,7 @@ class Solution {
 
 ## 单个题解：
 
-[力扣2266. 统计打字方案数](https://site.huangge1199.cn/217.html)
+[力扣2266. 统计打字方案数](http://192.168.0.198:5080/post/count-number-of-texts/)
 
 ## 题解：
 

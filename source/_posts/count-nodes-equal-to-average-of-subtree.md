@@ -23,7 +23,7 @@ categories: [算法,力扣]
 <p> </p>
 
 <p><strong>示例 1：</strong></p>  
-<img src="https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/blog/count-nodes-equal-to-average-of-subtree/20220426172421.png" style="width: 300px; height: 212px;">  
+<img src="20220426172421.png" style="width: 300px; height: 212px;">  
 <pre><strong>输入：</strong>root = [4,8,5,0,1,null,6]  
 <strong>输出：</strong>5  
 <strong>解释：</strong>  
@@ -35,7 +35,7 @@ categories: [算法,力扣]
 </pre>
 
 <p><strong>示例 2：</strong></p>  
-<img src="https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/blog/count-nodes-equal-to-average-of-subtree/image-20220326133920.png" style="width: 80px; height: 76px;">  
+<img src="image-20220326133920.png" style="width: 80px; height: 76px;">  
 <pre><strong>输入：</strong>root = [1]  
 <strong>输出：</strong>1  
 <strong>解释：</strong>对值为 1 的节点：子树的平均值 1 / 1 = 1。  

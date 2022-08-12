@@ -9,7 +9,7 @@ categories: [云原生]
 
 安装好k8s和helm
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inRancherByHelmNoCert/2022-06-26-16-48-16-image.png)
+![](2022-06-26-16-48-16-image.png)
 
 ## 安装命令
 
@@ -21,7 +21,7 @@ helm install rancher rancher-stable/rancher \
   --set ingress.tls.source=secret
 ```
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inRancherByHelmNoCert/2022-06-26-16-49-50-image.png)
+![](2022-06-26-16-49-50-image.png)
 
 ## 设置域名映射
 
@@ -34,7 +34,7 @@ sudo vi /etc/hosts
 # cat /etc/hosts
 ```
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inRancherByHelmNoCert/2022-06-26-16-51-20-image.png)
+![](2022-06-26-16-51-20-image.png)
 
 ## 确认安装完成
 
@@ -42,7 +42,7 @@ sudo vi /etc/hosts
 kubectl -n cattle-system get deploy rancher
 ```
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inRancherByHelmNoCert/2022-06-26-16-56-27-image.png)
+![](2022-06-26-16-56-27-image.png)
 
 ## 浏览器访问
 
@@ -50,7 +50,7 @@ kubectl -n cattle-system get deploy rancher
 
 高级--》继续访问
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inRancherByHelmNoCert/2022-06-26-16-59-29-image.png)
+![](2022-06-26-16-59-29-image.png)
 
 ## 密码查看
 
@@ -60,16 +60,16 @@ kubectl -n cattle-system get deploy rancher
 kubectl get secret --namespace cattle-system bootstrap-secret -o go-template='{{.data.bootstrapPassword|base64decode}}{{"\n"}}'
 ```
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inRancherByHelmNoCert/2022-06-26-17-01-02-image.png)
+![](2022-06-26-17-01-02-image.png)
 
 ## 设置自己好记的密码
 
 输入密码进入后，选择Set a specific password to use，然后下方设置自己的密码
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inRancherByHelmNoCert/2022-06-26-17-02-18-image.png)
+![](2022-06-26-17-02-18-image.png)
 
 ## 进入的页面
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inRancherByHelmNoCert/2022-06-26-17-04-28-image.png)
+![](2022-06-26-17-04-28-image.png)
 
 至此，rancher部署完成

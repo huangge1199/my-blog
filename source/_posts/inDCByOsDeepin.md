@@ -11,7 +11,7 @@ categories: [docker,deepin]
 sudo wget -c -t 0 https://github.com/docker/compose/releases/download/1.26.0/docker-compose-`uname -s`-`uname -m` -O /usr/local/bin/docker-compose
 ```
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inDCByOsDeepin/2022-07-05-21-18-26-image.png)
+![](2022-07-05-21-18-26-image.png)
 
 # 添加执行权限
 
@@ -19,7 +19,7 @@ sudo wget -c -t 0 https://github.com/docker/compose/releases/download/1.26.0/doc
 sudo chmod a+rx /usr/local/bin/docker-compose
 ```
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inDCByOsDeepin/2022-07-05-21-20-08-image.png)
+![](2022-07-05-21-20-08-image.png)
 
 # 验证是否安装成功
 
@@ -27,7 +27,7 @@ sudo chmod a+rx /usr/local/bin/docker-compose
 docker-compose -v
 ```
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inDCByOsDeepin/2022-07-05-21-20-46-image.png)
+![](2022-07-05-21-20-46-image.png)
 
 # 卸载
 

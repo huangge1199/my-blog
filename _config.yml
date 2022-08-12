@@ -106,9 +106,9 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: root@81.70.94.30:/app/hexo/hexo.git
+  repo: 'huangge1199@192.168.0.198:/var/services/homes/huangge1199/hexo/hexo.git'
   branch: master
-  token: huangge1199@
+#  repo: root@81.70.94.30:/app/hexo/hexo.git
 markdown_it_plus:
   plugins:
     - plugin:

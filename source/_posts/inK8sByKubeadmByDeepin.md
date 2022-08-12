@@ -18,7 +18,7 @@ sudo swapoff -a
 free -mh
 ```
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadmByDeepin/2022-06-24-21-45-13-image.png)
+![](2022-06-24-21-45-13-image.png)
 
 # 2、添加k8s源
 
@@ -40,7 +40,7 @@ deb https://mirrors.aliyun.com/kubernetes/apt/ kubernetes-xenial main
 cat /etc/apt/sources.list.d/kubernetes.list
 ```
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadmByDeepin/2022-06-24-22-10-06-image.png)
+![](2022-06-24-22-10-06-image.png)
 
 # 3、导入k8s密钥
 
@@ -50,7 +50,7 @@ cat /etc/apt/sources.list.d/kubernetes.list
 sudo curl -fsSL https://mirrors.aliyun.com/kubernetes/apt/doc/apt-key.gpg | sudo apt-key add -
 ```
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadmByDeepin/2022-06-24-22-16-25-image.png)
+![](2022-06-24-22-16-25-image.png)
 
 # 4、更新并安装kubeadm, kubelet 和 kubectl
 
@@ -86,7 +86,7 @@ sudo vi /etc/docker/daemon.json
 cat /etc/docker/daemon.json
 ```
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadmByDeepin/2022-06-24-22-49-46-image.png)
+![](2022-06-24-22-49-46-image.png)
 
 # 6、拉取镜像
 
@@ -117,7 +117,7 @@ done;
 kubeadm init --pod-network-cidr=10.244.0.0/16
 ```
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadmByDeepin/2022-06-24-23-00-07-image.png)
+![](2022-06-24-23-00-07-image.png)
 
 # 8、执行提示的命令
 
@@ -127,7 +127,7 @@ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadmByDeepin/2022-06-24-23-02-42-image.png)
+![](2022-06-24-23-02-42-image.png)
 
 # 9、安装网络插件
 
@@ -137,7 +137,7 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 kubectl apply -f https://github.com/coreos/flannel/raw/master/Documentation/kube-flannel.yml
 ```
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadmByDeepin/2022-06-24-23-05-02-image.png)
+![](2022-06-24-23-05-02-image.png)
 
 # 10、安装Ingress
 
@@ -153,4 +153,4 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/cont
 kubectl get pods --all-namespaces
 ```
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadmByDeepin/2022-06-24-23-41-18-image.png)
+![](2022-06-24-23-41-18-image.png)

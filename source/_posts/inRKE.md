@@ -65,7 +65,7 @@ vagrant up
 
 3台虚拟机都需要安装
 
-安装教程：[docker安装教程]([docker安装-龙儿之家](https://site.huangge1199.cn/113.html))
+安装教程：[docker安装教程]([docker安装-龙儿之家](http://192.168.0.198:5080/post/dockerInstall/))
 
 # 安装 Kubernetes 命令行工具 kubectl
 

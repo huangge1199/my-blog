@@ -187,7 +187,7 @@ kubeadm init \
 
 出现下面的内容，主节点部署完成
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadm/2022-06-04-18-24-59-image.png)
+![](2022-06-04-18-24-59-image.png)
 
 # 6、使用 kubectl 工具
 
@@ -478,13 +478,13 @@ spec:
 kubeadm token create --print-join-command
 ```
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadm/2022-06-04-19-27-17-image.png)
+![](2022-06-04-19-27-17-image.png)
 
 这里显示的命令拿到要加入的节点（node2和node3）执行就可以加入集群中
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadm/2022-06-04-19-28-18-image.png)
+![](2022-06-04-19-28-18-image.png)
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadm/2022-06-04-19-30-16-image.png)
+![](2022-06-04-19-30-16-image.png)
 
 然后回到master主节点执行命令，确认加入成功：
 
@@ -492,7 +492,7 @@ kubeadm token create --print-join-command
 kubectl get nodes
 ```
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadm/2022-06-04-19-58-04-image.png)
+![](2022-06-04-19-58-04-image.png)
 
 8.2、查看token命令获取
 
@@ -500,7 +500,7 @@ kubectl get nodes
 kubeadm token list
 ```
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadm/2022-06-04-20-54-08-image.png)
+![](2022-06-04-20-54-08-image.png)
 
 主节点：
 
@@ -509,7 +509,7 @@ kubeadm token list
 kubectl get nodes
 ```
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadm/2022-06-04-21-15-08-image.png)
+![](2022-06-04-21-15-08-image.png)
 
 节点3：
 
@@ -517,7 +517,7 @@ kubectl get nodes
 kubeadm join 172.17.8.51:6443 --token o15q87.xtnzlfis6gtez1x6 --discovery-token-unsafe-skip-ca-verification
 ```
 
- ![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadm/2022-06-04-21-22-21-image.png)
+ ![](2022-06-04-21-22-21-image.png)
 
 主节点：
 
@@ -526,7 +526,7 @@ kubeadm join 172.17.8.51:6443 --token o15q87.xtnzlfis6gtez1x6 --discovery-token-
 kubectl get nodes
 ```
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadm/2022-06-04-21-22-55-image.png)
+![](2022-06-04-21-22-55-image.png)
 
 # 9、集群中移除节点
 
@@ -541,7 +541,7 @@ kubectl delete node node3
 kubectl get nodes
 ```
 
-![](https://huangge1199-1303833695.cos.ap-beijing.myqcloud.com/images/inK8sByKubeadm/2022-06-04-20-59-19-image.png)
+![](2022-06-04-20-59-19-image.png)
 
 删除的节点执行：
 

@@ -10,11 +10,11 @@ categories: [算法,力扣,周赛]
 
 ## 力扣原题链接：
 
-[2273. 移除字母异位词后的结果数组](https://site.huangge1199.cn/?golink=aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9maW5kLXJlc3VsdGFudC1hcnJheS1hZnRlci1yZW1vdmluZy1hbmFncmFtcy8=)
+[2273. 移除字母异位词后的结果数组](https://leetcode.cn/problems/find-resultant-array-after-removing-anagrams/)
 
 ## 单个题解：
 
-[力扣2273. 移除字母异位词后的结果数组](https://site.huangge1199.cn/284.html)
+[力扣2273. 移除字母异位词后的结果数组](http://192.168.0.198:5080/post/find-resultant-array-after-removing-anagrams/)
 
 ## 题目：
 
@@ -101,7 +101,7 @@ class Solution {
 
 ## 单个题解：
 
-[力扣2274. 不含特殊楼层的最大连续楼层数](https://site.huangge1199.cn/288.html)
+[力扣2274. 不含特殊楼层的最大连续楼层数](http://192.168.0.198:5080/post/maximum-consecutive-floors-without-special-floors/)
 
 ## 题目：
 
@@ -186,7 +186,7 @@ class Solution {
 
 ## 单个题解：
 
-[力扣2275. 按位与结果大于零的最长组合](https://site.huangge1199.cn/286.html)
+[力扣2275. 按位与结果大于零的最长组合](http://192.168.0.198:5080/post/largest-combination-with-bitwise-and-greater-than-zero/)
 
 ## 题目：
 
@@ -271,7 +271,7 @@ class Solution {
 
 ## 单个题解：
 
-[力扣2276. 统计区间中的整数数目](https://site.huangge1199.cn/282.html)
+[力扣2276. 统计区间中的整数数目](http://192.168.0.198:5080/post/count-integers-in-intervals/)
 
 ## 题目：
 
