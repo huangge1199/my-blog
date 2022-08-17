@@ -199,7 +199,7 @@ wowjs:
   # see https://akilar.top/posts/f1004b1d/
 # 侧边栏电子钟
 electric_clock:
-  priority: 5
+  priority: 2
   enable: true
   enable_page: all
   layout:
