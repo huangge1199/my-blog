@@ -3,7 +3,6 @@ title: python3学习笔记--两种排序方法
 date: 2021-12-29 10:20:17
 tags: [学习笔记,python]
 categories: python
-cover: https://blog.huangge1199.cn/post/pyListSort/bg.jpeg
 ---
 # 列表排序方法
 
@@ -57,7 +56,7 @@ print(newStudents)  # [('jane', 'A', 12), ('dave', 'B', 10), ('john', 'C', 15)]
         id: 'article-container',
         blogId: '28702-1640918923546-365',
         name: '龙儿之家',
-        qrcode: 'https://blog.huangge1199.cn/images/WeaselLong.jpg',
+        qrcode: 'https://xy.huangge1199.cn/images/WeaselLong.jpg',
         keyword: 'more',
     });
 </script>

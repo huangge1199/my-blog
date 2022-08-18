@@ -3,7 +3,6 @@ title: influxdb安装（centos7）
 date: 2022-03-12 18:14:53
 tags: [安装部署]
 categories: [安装部署]
-cover: https://blog.huangge1199.cn/post/jpaCompositePK/bg.jpg
 ---
 
 # 1、获取安装包
