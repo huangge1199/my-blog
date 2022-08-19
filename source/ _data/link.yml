@@ -43,27 +43,27 @@
   link_list:
     - name: jdk
       link: https://www.oracle.com/java/technologies/downloads/
-      avatar: https://xy.huangge1199.cn/link/jdk.png
+      avatar: https://blog.huangge1199.cn/link/jdk.png
       descr: Java语言的软件开发工具包
     - name: IDEA
       link: https://www.jetbrains.com/zh-cn/idea/
-      avatar: https://xy.huangge1199.cn/link/idea.png
+      avatar: https://blog.huangge1199.cn/link/idea.png
       descr: 功能强大、符合人体工程学的 Java IDE
     - name: webstorm
       link: https://www.jetbrains.com/zh-cn/webstorm/
-      avatar: https://xy.huangge1199.cn/link/webstorm.png
+      avatar: https://blog.huangge1199.cn/link/webstorm.png
       descr: 一个适用于JavaScript 和相关技术的集成开发环境
     - name: datagrip
       link: https://www.jetbrains.com/zh-cn/datagrip/
-      avatar: https://xy.huangge1199.cn/link/datagrip.png
+      avatar: https://blog.huangge1199.cn/link/datagrip.png
       descr: 由JetBrains 开发的数据库和SQL 跨平台IDE
     - name: pyCharm
       link: https://www.jetbrains.com/zh-cn/pycharm/
-      avatar: https://xy.huangge1199.cn/link/pycharm.png
+      avatar: https://blog.huangge1199.cn/link/pycharm.png
       descr: JetBrains为专业开发者提供的Python IDE
     - name: xshell
       link: https://www.xshell.com/zh/xshell/
-      avatar: https://xy.huangge1199.cn/link/xshell.png
+      avatar: https://blog.huangge1199.cn/link/xshell.png
       descr: 业界最强大的SSH客户机
     - name: winscp
       link: https://winscp.net/eng/index.php
@@ -71,11 +71,11 @@
       descr: 一个Windows 环境下使用的 SSH 的开源图形化 SFTP 客户端
     - name: Another Redis Desktop Manager
       link: https://github.com/qishibo/AnotherRedisDesktopManager
-      avatar: https://xy.huangge1199.cn/link/AnotherRedisDesktopManager.png
+      avatar: https://blog.huangge1199.cn/link/AnotherRedisDesktopManager.png
       descr: 更快、更好、更稳定的Redis桌面(GUI)管理客户端，兼容Windows、Mac、Linux，性能出众，轻松加载海量键值
     - name: JD-GUI
       link: http://java-decompiler.github.io/
-      avatar: https://xy.huangge1199.cn/link/jdgui.png
+      avatar: https://blog.huangge1199.cn/link/jdgui.png
       descr: 一款功能十分强大的JAVA反编译工具
 
 - class_name: 后端开发
@@ -98,7 +98,7 @@
       descr: 一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台
     - name: nginx
       link: https://nginx.org/
-      avatar: https://xy.huangge1199.cn/link/nginx.png
+      avatar: https://blog.huangge1199.cn/link/nginx.png
       descr: 反向代理服务器
     - name: zookeeper
       link: https://zookeeper.apache.org/
@@ -106,11 +106,11 @@
       descr: 为大型分布式计算提供开源的分布式配置服务、同步服务和命名注册
     - name: kafka
       link: https://kafka.apache.org/
-      avatar: https://xy.huangge1199.cn/link/kafka.png
+      avatar: https://blog.huangge1199.cn/link/kafka.png
       descr: 一种分布式的，基于发布 / 订阅的消息系统
     - name: rabbitmq
       link: https://www.rabbitmq.com/
-      avatar: https://xy.huangge1199.cn/link/rabbitmq.png
+      avatar: https://blog.huangge1199.cn/link/rabbitmq.png
       descr: 消息队列
     - name: rocketmq
       link: https://rocketmq.apache.org/
@@ -130,7 +130,7 @@
       descr: MQTT - 轻量级的物联网消息传输协议
     - name: powerjob
       link: http://www.powerjob.tech/
-      avatar: https://xy.huangge1199.cn/link/powerjob.ico
+      avatar: https://blog.huangge1199.cn/link/powerjob.ico
       descr: 新一代分布式任务调度与计算框架，支持CRON、API、固定频率、固定延迟等调度策略，提供工作流来编排任务解决依赖关系，使用简单，功能强大，文档齐全。
 
 - class_name: 前端开发
@@ -161,7 +161,7 @@
       descr: 轻量、可靠的小程序 UI 组件库
     - name: jQuery UI
       link: https://jui.org/
-      avatar: https://xy.huangge1199.cn/link/jui.png
+      avatar: https://blog.huangge1199.cn/link/jui.png
       descr: 简单实用国产jQuery UI框架 - DWZ富客户端框架(J-UI.com)
     - name: mavonEditor
       link: http://www.mavoneditor.com/
@@ -176,7 +176,7 @@
   link_list:
     - name: YAPI
       link: http://yapi.smart-xwork.cn/
-      avatar: https://xy.huangge1199.cn/link/yapi.png
+      avatar: https://blog.huangge1199.cn/link/yapi.png
       descr: 高效、易用、功能强大的API管理平台
     - name: 恒星播放器
       link: https://www.stellarplayer.com/
