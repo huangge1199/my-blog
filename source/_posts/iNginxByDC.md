@@ -12,19 +12,19 @@ docker中安装nginx
 
 通过[Docker Hub网站查询nginx镜像](https://hub.docker.com/)，选择下面的官方镜像
 
-![](2022-04-21-00-46-47-image.png)
+![](https://img.huangge1199.cn/blog/iNginxByDC/2022-04-21-00-46-47-image.png)
 
 # 2、下载镜像
 
 3.1页面点进去后在右上方有docker拉取命令
 
-![](2022-04-21-00-47-51-image.png)
+![](https://img.huangge1199.cn/blog/iNginxByDC/2022-04-21-00-47-51-image.png)
 
 ```shell
 docker pull nginx
 ```
 
-![](2022-04-21-01-03-03-image.png)
+![](https://img.huangge1199.cn/blog/iNginxByDC/2022-04-21-01-03-03-image.png)
 
 # 3、编写docker-compose.yml
 
@@ -55,7 +55,7 @@ services:
 
 目录：
 
-![](2022-04-21-20-43-55-image.png)
+![](https://img.huangge1199.cn/blog/iNginxByDC/2022-04-21-20-43-55-image.png)
 
 conf/nginx.conf：
 
@@ -202,7 +202,7 @@ ll
 docker-compose up -d
 ```
 
-![](2022-04-21-19-59-02-image.png)
+![](https://img.huangge1199.cn/blog/iNginxByDC/2022-04-21-19-59-02-image.png)
 
 # 6、验证nginx正常启动
 
@@ -212,10 +212,10 @@ docker-compose up -d
 docker ps -a
 ```
 
-![](2022-04-21-20-12-55-image.png)
+![](https://img.huangge1199.cn/blog/iNginxByDC/2022-04-21-20-12-55-image.png)
 
 然后在浏览器中输入IP，出现欢迎界面，安装完成
 
-![](2022-04-24-15-34-45-image.png)
+![](https://img.huangge1199.cn/blog/iNginxByDC/2022-04-24-15-34-45-image.png)
 
  

@@ -15,13 +15,13 @@ categories: [安装部署]
 
 官网地址：[maven下载页面](https://maven.apache.org/download.cgi)
 
-![image-20220603115702494](inMavenByOsDeepin/image-20220603115702494.png)
+![image-20220603115702494](https://img.huangge1199.cn/blog/inMavenByOsDeepin/image-20220603115702494.png)
 
 我这边下载的是3.8.5版本的，如果下载其他版本，用下面的链接：
 
-[其他版本maven](https://archive.apache.org/dist/maven/maven-3/)
+[其他版本maven](https://img.huangge1199.cn/blog/inMavenByOsDeepin/https://archive.apache.org/dist/maven/maven-3/)
 
-![image-20220603120000596](inMavenByOsDeepin/image-20220603120000596.png)
+![image-20220603120000596](https://img.huangge1199.cn/blog/inMavenByOsDeepin/image-20220603120000596.png)
 
 # 3、解压
 
@@ -30,7 +30,7 @@ tar -xf apache-maven-3.8.5-bin.tar.gz
 ls -l
 ```
 
-![image-20220603120156243](inMavenByOsDeepin/image-20220603120156243.png)
+![image-20220603120156243](https://img.huangge1199.cn/blog/inMavenByOsDeepin/image-20220603120156243.png)
 
 # 4、移动
 
@@ -40,7 +40,7 @@ ls -l
 ls -l ../app/
 ```
 
-![image-20220603120347751](inMavenByOsDeepin/image-20220603120347751.png)
+![image-20220603120347751](https://img.huangge1199.cn/blog/inMavenByOsDeepin/image-20220603120347751.png)
 
 # 5、配置环境变量
 
@@ -56,7 +56,7 @@ export MAVEN_HOME=/home/deepin/app/apache-maven-3.8.5
 export PATH=$PATH:$MAVEN_HOME/bin
 ```
 
-![image-20220603121051155](inMavenByOsDeepin/image-20220603121051155.png)
+![image-20220603121051155](https://img.huangge1199.cn/blog/inMavenByOsDeepin/image-20220603121051155.png)
 
 执行命令让配置文件生效：
 
@@ -64,7 +64,7 @@ export PATH=$PATH:$MAVEN_HOME/bin
 source /etc/profile
 ```
 
-![image-20220603121153205](inMavenByOsDeepin/image-20220603121153205.png)
+![image-20220603121153205](https://img.huangge1199.cn/blog/inMavenByOsDeepin/image-20220603121153205.png)
 
 # 6、验证
 
@@ -74,7 +74,7 @@ source /etc/profile
 mvn -v
 ```
 
-![image-20220603121458972](inMavenByOsDeepin/image-20220603121458972.png)
+![image-20220603121458972](https://img.huangge1199.cn/blog/inMavenByOsDeepin/image-20220603121458972.png)
 
 # 7、配置仓库文件目录
 
@@ -90,7 +90,7 @@ vi /home/deepin/app/apache-maven-3.8.5/conf/settings.xml
 
 红框内容为新加入的
 
-![image-20220603122200505](inMavenByOsDeepin/image-20220603122200505.png)
+![image-20220603122200505](https://img.huangge1199.cn/blog/inMavenByOsDeepin/image-20220603122200505.png)
 
 # 8、添加阿里镜像源
 
@@ -111,4 +111,4 @@ vi /home/deepin/app/apache-maven-3.8.5/conf/settings.xml
 
 下面红框内容为添加的
 
-![image-20220603122859128](inMavenByOsDeepin/image-20220603122859128.png)
+![image-20220603122859128](https://img.huangge1199.cn/blog/inMavenByOsDeepin/image-20220603122859128.png)

@@ -125,10 +125,10 @@ live2d:
 envelope_comment:
   enable: true #控制开关
   custom_pic:
-    cover: https://blog.huangge1199.cn/images/violet.jpg #信笺头部图片
+    cover: https://img.huangge1199.cn/blog/images/violet.jpg #信笺头部图片
     line: https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/line.png #信笺底部图片
-    beforeimg: https://blog.huangge1199.cn/images/before.png # 信封前半部分
-    afterimg: https://blog.huangge1199.cn/images/after.png # 信封后半部分
+    beforeimg: https://img.huangge1199.cn/blog/images/before.png # 信封前半部分
+    afterimg: https://img.huangge1199.cn/blog/images/after.png # 信封后半部分
   message: #信笺正文，多行文本，写法如下
     - 有什么想问的？
     - 有什么想说的？

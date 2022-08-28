@@ -18,7 +18,7 @@ cover: bg.jpeg
 docker pull sonatype/nexus3
 ```
 
-![image-20220112202513617](image-20220112202513617.png)
+![image-20220112202513617](https://img.huangge1199.cn/blog/nexusCreate/image-20220112202513617.png)
 
 ## 创建宿主机挂载目录并编写docker-compose.yml
 
@@ -46,7 +46,7 @@ services:
         restart: always
 ```
 
-![image-20220112203927784](image-20220112203927784.png)
+![image-20220112203927784](https://img.huangge1199.cn/blog/nexusCreate/image-20220112203927784.png)
 
 ## 启动容器
 
@@ -54,25 +54,25 @@ services:
 docker-compose up -d
 ```
 
-![image-20220112204407509](image-20220112204407509.png)
+![image-20220112204407509](https://img.huangge1199.cn/blog/nexusCreate/image-20220112204407509.png)
 
 ## 浏览器验证
 
 浏览器中输入http://IP:8081/，出现下面的页面启动完成
 
-![image-20220112204921432](image-20220112204921432.png)
+![image-20220112204921432](https://img.huangge1199.cn/blog/nexusCreate/image-20220112204921432.png)
 
 # Nexus 服务的配置
 
 ## 浏览器中点击右上角的登录
 
-![image-20220112205557025](image-20220112205557025.png)
+![image-20220112205557025](https://img.huangge1199.cn/blog/nexusCreate/image-20220112205557025.png)
 
 ##  登录
 
 首次登录会提示密码保存在**/nexus-data/admin.password**（位置可能会变，看提示）
 
-![image-20220112214506743](image-20220112214506743.png)
+![image-20220112214506743](https://img.huangge1199.cn/blog/nexusCreate/image-20220112214506743.png)
 
 由于这个目录我们的docker并没有引出来，所以我们要去docker容器内查看
 
@@ -83,57 +83,57 @@ cat /nexus-data/admin.password
 
 这地方注意下，cat后不会换行，注意看下密码，用户名是admin，文件中存的就是密码
 
-![image-20220112214220341](image-20220112214220341.png)
+![image-20220112214220341](https://img.huangge1199.cn/blog/nexusCreate/image-20220112214220341.png)
 
 ## 设置密码
 
 登录后：
 
-![image-20220112214637528](image-20220112214637528.png)
+![image-20220112214637528](https://img.huangge1199.cn/blog/nexusCreate/image-20220112214637528.png)
 
 点击next设置新密码
 
-![image-20220112214717867](image-20220112214717867.png)
+![image-20220112214717867](https://img.huangge1199.cn/blog/nexusCreate/image-20220112214717867.png)
 
-![image-20220112214820826](image-20220112214820826.png)
+![image-20220112214820826](https://img.huangge1199.cn/blog/nexusCreate/image-20220112214820826.png)
 
-![image-20220112214831857](image-20220112214831857.png)
+![image-20220112214831857](https://img.huangge1199.cn/blog/nexusCreate/image-20220112214831857.png)
 
 ## 增加阿里云公共仓库
 
 由于默认的里面没有阿里云仓库，用maven的仓库速度慢，所以增加一个阿里云仓库
 
-![image-20220112215708898](image-20220112215708898.png)
+![image-20220112215708898](https://img.huangge1199.cn/blog/nexusCreate/image-20220112215708898.png)
 
-![image-20220112215809631](image-20220112215809631.png)
+![image-20220112215809631](https://img.huangge1199.cn/blog/nexusCreate/image-20220112215809631.png)
 
-![image-20220112215951755](image-20220112215951755.png)
+![image-20220112215951755](https://img.huangge1199.cn/blog/nexusCreate/image-20220112215951755.png)
 
-![image-20220112220131151](image-20220112220131151.png)
+![image-20220112220131151](https://img.huangge1199.cn/blog/nexusCreate/image-20220112220131151.png)
 
 接下来填写信息：name这个随意填，为了方便记忆我填写的aliyun-public-proxy，下面的配置阿里云地址https://maven.aliyun.com/repository/public，两个填好后点击最下方的Create repository
 
-![image-20220112220511830](image-20220112220511830.png)
+![image-20220112220511830](https://img.huangge1199.cn/blog/nexusCreate/image-20220112220511830.png)
 
-![image-20220112220741095](image-20220112220741095.png)
+![image-20220112220741095](https://img.huangge1199.cn/blog/nexusCreate/image-20220112220741095.png)
 
 ## 统一私服
 
 - 编辑**maven-public**
 
-![image-20220112221401367](image-20220112221401367.png)
+![image-20220112221401367](https://img.huangge1199.cn/blog/nexusCreate/image-20220112221401367.png)
 
 - 将刚刚的aliyun-public-proxy放入 **group** 中，并调整优先级，然后保存
 
-![image-20220112221517343](image-20220112221517343.png)
+![image-20220112221517343](https://img.huangge1199.cn/blog/nexusCreate/image-20220112221517343.png)
 
-![image-20220112221637473](image-20220112221637473.png)
+![image-20220112221637473](https://img.huangge1199.cn/blog/nexusCreate/image-20220112221637473.png)
 
 ## 查看私服地址
 
 回到上一个页面，点击copy，弹出来的地址就是私服地址
 
-![image-20220112221849871](image-20220112221849871.png)
+![image-20220112221849871](https://img.huangge1199.cn/blog/nexusCreate/image-20220112221849871.png)
 
 # 使用私服
 
@@ -215,11 +215,11 @@ cat /nexus-data/admin.password
 
 我这边建了一个Springboot项目
 
-![image-20220112223312451](image-20220112223312451.png)
+![image-20220112223312451](https://img.huangge1199.cn/blog/nexusCreate/image-20220112223312451.png)
 
 设置maven路径
 
-![image-20220112224909515](image-20220112224909515.png)
+![image-20220112224909515](https://img.huangge1199.cn/blog/nexusCreate/image-20220112224909515.png)
 
 ## 发布依赖
 
@@ -244,7 +244,7 @@ cat /nexus-data/admin.password
 
 2. 执行 **mvn deploy** 命令发布：
 
-   ![image-20220112230213213](image-20220112230213213.png)
+   ![image-20220112230213213](https://img.huangge1199.cn/blog/nexusCreate/image-20220112230213213.png)
 
 3. 查看网页，是否部署成功
 
@@ -253,4 +253,4 @@ cat /nexus-data/admin.password
    - 若项目版本号末尾带有 **-SNAPSHOT**，则会发布到 **snapshots** 快照版本仓库
    - 若项目版本号末尾带有 **-RELEASES** 或什么都不带，则会发布到 **releases** 正式版本仓库
 
-   ![image-20220112230645860](image-20220112230645860.png)
+   ![image-20220112230645860](https://img.huangge1199.cn/blog/nexusCreate/image-20220112230645860.png)

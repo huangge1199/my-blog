@@ -119,7 +119,7 @@ kafka-topics.bat --create --zookeeper IP:2181 --replication-factor 3 --partition
 kafka-console-producer.bat --broker-list 192.168.0.116:9097,192.168.0.116:9098,192.168.0.116:9099 --topic test7
 ```
 
-![](2022-07-08-15-14-23-image.png)
+![](https://img.huangge1199.cn/blog/dpKafkaZKCluster/2022-07-08-15-14-23-image.png)
 
 ## 3、创建消费者
 
@@ -129,7 +129,7 @@ kafka-console-producer.bat --broker-list 192.168.0.116:9097,192.168.0.116:9098,1
 kafka-console-consumer.bat --bootstrap-server 192.168.0.116:9097 --topic test7 --from-beginning
 ```
 
-![](2022-07-08-15-14-57-image.png)
+![](https://img.huangge1199.cn/blog/dpKafkaZKCluster/2022-07-08-15-14-57-image.png)
 
 ## 4、生产者发送消息，消费者接收消息
 
@@ -137,8 +137,8 @@ kafka-console-consumer.bat --bootstrap-server 192.168.0.116:9097 --topic test7 -
 
 生产者：
 
-![](2022-07-08-15-15-55-image.png)
+![](https://img.huangge1199.cn/blog/dpKafkaZKCluster/2022-07-08-15-15-55-image.png)
 
 消费者：
 
-![](2022-07-08-15-16-48-image.png)
+![](https://img.huangge1199.cn/blog/dpKafkaZKCluster/2022-07-08-15-16-48-image.png)

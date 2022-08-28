@@ -33,7 +33,7 @@ categories: [云原生]
 kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.5.1/cert-manager.crds.yaml
 ```
 
-![2022-06-18-11-12-15-image.png](ca771f4aa96e9cafe14c329195308b345c23427b.png)
+![](https://img.huangge1199.cn/blog/inRancherByHelm/ca771f4aa96e9cafe14c329195308b345c23427b.png)
 
 ## 1.2 添加 Jetstack Helm 仓库
 
@@ -43,7 +43,7 @@ kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.5
 helm repo add jetstack https://charts.jetstack.io
 ```
 
-![](2022-06-18-11-51-51-image.png)
+![](https://img.huangge1199.cn/blog/inRancherByHelm/2022-06-18-11-51-51-image.png)
 
 ## 1.3 更新本地 Helm chart 仓库缓存
 
@@ -53,7 +53,7 @@ helm repo add jetstack https://charts.jetstack.io
 helm repo update
 ```
 
-![](2022-06-18-11-53-22-image.png)
+![](https://img.huangge1199.cn/blog/inRancherByHelm/2022-06-18-11-53-22-image.png)
 
 ## 1.4 安装 cert-manager Helm chart
 
@@ -66,11 +66,11 @@ helm install cert-manager jetstack/cert-manager \
   --version v1.5.1
 ```
 
-![](2022-06-18-11-55-29-image.png)
+![](https://img.huangge1199.cn/blog/inRancherByHelm/2022-06-18-11-55-29-image.png)
 
 如果报错内容如下：
 
-![](2022-06-18-11-56-38-image.png)
+![](https://img.huangge1199.cn/blog/inRancherByHelm/2022-06-18-11-56-38-image.png)
 
 可做如下操作：
 
@@ -83,7 +83,7 @@ kubectl delete namespace cert-manager
 helm ls --all-namespaces
 ```
 
-![](2022-06-18-11-59-43-image.png)
+![](https://img.huangge1199.cn/blog/inRancherByHelm/2022-06-18-11-59-43-image.png)
 
 然后在重新执行命令即可
 
@@ -95,7 +95,7 @@ helm ls --all-namespaces
 kubectl get pods --namespace cert-manager
 ```
 
-![](2022-06-18-12-02-27-image.png)
+![](https://img.huangge1199.cn/blog/inRancherByHelm/2022-06-18-12-02-27-image.png)
 
 # 2、安装ingress-nginx
 
@@ -107,7 +107,7 @@ kubectl get pods --namespace cert-manager
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 ```
 
-![](2022-06-18-12-10-24-image.png)
+![](https://img.huangge1199.cn/blog/inRancherByHelm/2022-06-18-12-10-24-image.png)
 
 ## 2.2 安装
 
@@ -135,7 +135,7 @@ helm repo add rancher-stable https://releases.rancher.com/server-charts/stable
 helm repo list
 ```
 
-![](2022-06-18-12-12-48-image.png)
+![](https://img.huangge1199.cn/blog/inRancherByHelm/2022-06-18-12-12-48-image.png)
 
 ## 3.3 安装
 
@@ -148,11 +148,11 @@ helm install rancher rancher-stable/rancher \
 >   --version 2.6.5
 ```
 
-![](2022-06-18-12-18-50-image.png)
+![](https://img.huangge1199.cn/blog/inRancherByHelm/2022-06-18-12-18-50-image.png)
 
 > 配置的hostname=rancher.my.org，这个域名需要添加到 `/etc/hosts`
 
-![](2022-06-18-12-24-48-image.png)
+![](https://img.huangge1199.cn/blog/inRancherByHelm/2022-06-18-12-24-48-image.png)
 
 ## 3.4 运行
 
@@ -160,7 +160,7 @@ helm install rancher rancher-stable/rancher \
 kubectl -n cattle-system rollout status deploy/rancher
 ```
 
-![](2022-06-18-12-19-21-image.png)
+![](https://img.huangge1199.cn/blog/inRancherByHelm/2022-06-18-12-19-21-image.png)
 
 ## 3.5 查看 Rancher 运行状态
 
@@ -168,7 +168,7 @@ kubectl -n cattle-system rollout status deploy/rancher
 kubectl -n cattle-system get deploy rancher
 ```
 
-![](2022-06-18-12-20-59-image.png)
+![](https://img.huangge1199.cn/blog/inRancherByHelm/2022-06-18-12-20-59-image.png)
 
 至此，Rancher部署完成
 
@@ -184,4 +184,4 @@ kubectl get secret --namespace cattle-system bootstrap-secret -o go-template='{{
 
 进入后的样子：
 
-![](2022-06-18-12-27-32-image.png)
+![](https://img.huangge1199.cn/blog/inRancherByHelm/2022-06-18-12-27-32-image.png)

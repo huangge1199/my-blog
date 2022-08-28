@@ -10,7 +10,7 @@ docker-compose安装
 
 按照自己的系统来安装：
 
-![](2022-04-21-00-36-46-image.png)
+![](https://img.huangge1199.cn/blog/dockerComposeInstall/2022-04-21-00-36-46-image.png)
 
 # 1、下载docker-compose
 
@@ -28,7 +28,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 curl -L https://get.daocloud.io/docker/compose/releases/download/1.29.2/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 ```
 
-![](2022-04-21-00-40-56-image.png)
+![](https://img.huangge1199.cn/blog/dockerComposeInstall/2022-04-21-00-40-56-image.png)
 
 # 2、授予权限
 
@@ -45,4 +45,4 @@ docker-compose --version
 
 输入命令后，出现版本号，则为安装成功
 
-![](2022-04-21-00-44-14-image.png)
+![](https://img.huangge1199.cn/blog/dockerComposeInstall/2022-04-21-00-44-14-image.png)

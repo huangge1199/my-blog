@@ -9,51 +9,51 @@ categories: [云原生]
 
 ### 1.1 点击左侧系统管理
 
-![](2022-06-28-22-26-15-image.png)
+![](https://img.huangge1199.cn/blog/bindK8sToJenkins/2022-06-28-22-26-15-image.png)
 
 ### 1.2 点击插件管理
 
-![](2022-06-28-22-27-34-image.png)
+![](https://img.huangge1199.cn/blog/bindK8sToJenkins/2022-06-28-22-27-34-image.png)
 
 ### 1.3 安装插件Kubernetes plugin
 
-![](2022-06-28-22-28-53-image.png)
+![](https://img.huangge1199.cn/blog/bindK8sToJenkins/2022-06-28-22-28-53-image.png)
 
 ### 1.4 安装好后重启Jenkins
 
 浏览器输入http://192.168.0.196:8080/restart，页面点击“是”重启Jenkins
 
-![](2022-06-28-22-30-31-image.png)
+![](https://img.huangge1199.cn/blog/bindK8sToJenkins/2022-06-28-22-30-31-image.png)
 
 ## 二、进入配置页
 
 ### 2.1 左侧点击系统管理
 
-![](2022-06-28-22-31-51-image.png)
+![](https://img.huangge1199.cn/blog/bindK8sToJenkins/2022-06-28-22-31-51-image.png)
 
 ### 2.2 点击节点管理
 
-![](2022-06-28-22-32-25-image.png)
+![](https://img.huangge1199.cn/blog/bindK8sToJenkins/2022-06-28-22-32-25-image.png)
 
 ### 2.3 点击Configure Clouds
 
-![](2022-06-28-22-33-15-image.png)
+![](https://img.huangge1199.cn/blog/bindK8sToJenkins/2022-06-28-22-33-15-image.png)
 
 ## 三、配置
 
 ### 3.1 下拉框选择Kubernetes
 
-![](2022-06-28-22-34-14-image.png)
+![](https://img.huangge1199.cn/blog/bindK8sToJenkins/2022-06-28-22-34-14-image.png)
 
 ### 3.2 点击Kubernetes Cloud details...进入配置详情页
 
-![](2022-06-28-22-35-00-image.png)
+![](https://img.huangge1199.cn/blog/bindK8sToJenkins/2022-06-28-22-35-00-image.png)
 
 ### 3.3 填入认证信息
 
 需要填写红框内的4个内容
 
-![](2022-06-28-22-42-49-image.png)
+![](https://img.huangge1199.cn/blog/bindK8sToJenkins/2022-06-28-22-42-49-image.png)
 
 #### Kubernetes 地址
 
@@ -63,7 +63,7 @@ categories: [云原生]
 kubectl cluster-info
 ```
 
-![](2022-06-28-23-16-34-image.png)
+![](https://img.huangge1199.cn/blog/bindK8sToJenkins/2022-06-28-23-16-34-image.png)
 
 红框内的就是地址
 
@@ -77,7 +77,7 @@ kubectl cluster-info
 cat .kube/config
 ```
 
-![](2022-06-28-22-46-52-image.png)
+![](https://img.huangge1199.cn/blog/bindK8sToJenkins/2022-06-28-22-46-52-image.png)
 
 在执行下面的命令进行base64加密：
 
@@ -85,7 +85,7 @@ cat .kube/config
 echo "certificate-authority-data冒号后面的内容" | base64 -d
 ```
 
-![](2022-06-28-22-52-27-image.png)
+![](https://img.huangge1199.cn/blog/bindK8sToJenkins/2022-06-28-22-52-27-image.png)
 
 红框的内容填入“Kubernetes 服务证书 key”中
 
@@ -97,11 +97,11 @@ echo "certificate-authority-data冒号后面的内容" | base64 -d
 
 这地方需要添加一个凭借
 
-![](2022-06-28-22-54-22-image.png)
+![](https://img.huangge1199.cn/blog/bindK8sToJenkins/2022-06-28-22-54-22-image.png)
 
 在弹出的页面中类型选Secret text
 
-![](2022-06-28-22-57-05-image.png)
+![](https://img.huangge1199.cn/blog/bindK8sToJenkins/2022-06-28-22-57-05-image.png)
 
 下面的Secret通过终端添加：
 
@@ -111,7 +111,7 @@ echo "certificate-authority-data冒号后面的内容" | base64 -d
 kubectl create sa jenkins
 ```
 
-![](2022-06-28-23-19-07-image.png)
+![](https://img.huangge1199.cn/blog/bindK8sToJenkins/2022-06-28-23-19-07-image.png)
 
 获取token名
 
@@ -119,7 +119,7 @@ kubectl create sa jenkins
 kubectl describe sa jenkins
 ```
 
-![](2022-06-28-23-19-57-image.png)
+![](https://img.huangge1199.cn/blog/bindK8sToJenkins/2022-06-28-23-19-57-image.png)
 
 获取token值
 
@@ -127,13 +127,13 @@ kubectl describe sa jenkins
 kubectl describe secrets jenkins-token-szvg9 -n default
 ```
 
-![](2022-06-28-23-21-36-image.png)
+![](https://img.huangge1199.cn/blog/bindK8sToJenkins/2022-06-28-23-21-36-image.png)
 
 上图中的token即为Secret填入的内容
 
 最后的描述可以随意填写
 
-![](2022-06-28-23-07-30-image.png)
+![](https://img.huangge1199.cn/blog/bindK8sToJenkins/2022-06-28-23-07-30-image.png)
 
 点击添加，凭据就好了
 
@@ -141,8 +141,8 @@ kubectl describe secrets jenkins-token-szvg9 -n default
 
 点击连接测试，左侧显示k8s集群版本
 
-![](2022-06-28-23-23-35-image.png)  
+![](https://img.huangge1199.cn/blog/bindK8sToJenkins/2022-06-28-23-23-35-image.png)  
 
 下面把Jenkins地址填上，再点击保存按钮就完成了
 
-![](2022-06-28-23-26-16-image.png)
+![](https://img.huangge1199.cn/blog/bindK8sToJenkins/2022-06-28-23-26-16-image.png)

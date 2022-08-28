@@ -9,7 +9,7 @@ categories: [安装部署]
 
 [官网下载地址](https://www.oracle.com/java/technologies/downloads/#java11)如下：
 
-![image-20220603015920009](inJdkByOsDeepin/image-20220603015920009.png)
+![image-20220603015920009](https://img.huangge1199.cn/blog/inJdkByOsDeepin/image-20220603015920009.png)
 
 > 注意区分是哪个版本的
 
@@ -21,7 +21,7 @@ categories: [安装部署]
 sudo dpkg -i jdk-11.0.15.1_linux-x64_bin.deb
 ```
 
-![image-20220603020439325](inJdkByOsDeepin/image-20220603020439325.png)
+![image-20220603020439325](https://img.huangge1199.cn/blog/inJdkByOsDeepin/image-20220603020439325.png)
 
 # 3、配置环境变量
 
@@ -48,7 +48,7 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 source /etc/profile
 ```
 
-![image-20220603021925685](inJdkByOsDeepin/image-20220603021925685.png)
+![image-20220603021925685](https://img.huangge1199.cn/blog/inJdkByOsDeepin/image-20220603021925685.png)
 
 # 5、检查是否成功
 
@@ -58,4 +58,4 @@ source /etc/profile
 java -version
 ```
 
-![image-20220603022022217](inJdkByOsDeepin/image-20220603022022217.png)
+![image-20220603022022217](https://img.huangge1199.cn/blog/inJdkByOsDeepin/image-20220603022022217.png)

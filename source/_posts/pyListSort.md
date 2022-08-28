@@ -56,7 +56,7 @@ print(newStudents)  # [('jane', 'A', 12), ('dave', 'B', 10), ('john', 'C', 15)]
         id: 'article-container',
         blogId: '28702-1640918923546-365',
         name: '龙儿之家',
-        qrcode: 'https://blog.huangge1199.cn/images/WeaselLong.jpg',
+        qrcode: 'https://img.huangge1199.cn/blog/images/WeaselLong.jpg',
         keyword: 'more',
     });
 </script>

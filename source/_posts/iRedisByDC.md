@@ -13,7 +13,7 @@ categories: [docker]
 docker pull redis
 ```
 
-![](2022-04-24-16-57-51-image.png)
+![](https://img.huangge1199.cn/blog/iRedisByDC/2022-04-24-16-57-51-image.png)
 
 # 2、编写docker-compose.yml文件
 
@@ -47,7 +47,7 @@ mkdir conf
 ll
 ```
 
-![](2022-04-24-17-04-13-image.png)
+![](https://img.huangge1199.cn/blog/iRedisByDC/2022-04-24-17-04-13-image.png)
 
 # 4、编写Redis的配置文件
 
@@ -2115,14 +2115,14 @@ jemalloc-bg-thread yes
 docker-compose up -d
 ```
 
-![](2022-04-24-17-10-52-image.png)
+![](https://img.huangge1199.cn/blog/iRedisByDC/2022-04-24-17-10-52-image.png)
 
 # 6、远程连接验证结果
 
 信息填完，点击OK
 
-![](2022-04-24-17-12-56-image.png)
+![](https://img.huangge1199.cn/blog/iRedisByDC/2022-04-24-17-12-56-image.png)
 
 点击左侧对呀的连接，右侧出现redis服务器信息则为安装成功
 
-![](2022-04-24-17-14-15-image.png)
+![](https://img.huangge1199.cn/blog/iRedisByDC/2022-04-24-17-14-15-image.png)

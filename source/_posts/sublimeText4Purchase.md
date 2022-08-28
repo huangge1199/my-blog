@@ -13,10 +13,10 @@ https://www.sublimetext.com/download
 
 地址：[hexed](https://hexed.it/)
 
-![image-20220114153619254](image-20220114153619254.png)
+![image-20220114153619254](https://img.huangge1199.cn/blog/sublimeText4Purchase/image-20220114153619254.png)
 
 ## 打开``sublime_text.exe``文件
-![img.png](img.png)
+![img.png](https://img.huangge1199.cn/blog/sublimeText4Purchase/img.png)
 
 ## 替换
 
@@ -31,11 +31,11 @@ https://www.sublimetext.com/download
 
 按住`Ctrl+F`，我这边是64位电脑，在搜索中输入`4157415656575553B828210000` ，在替换为输入`33C0FEC0C3AC200000`，如果替换为无法输入，记得将替换为上一行的启用替换勾选上，然后先查找一下，接下来再点击替换
 
-![image-20220114154528250](image-20220114154528250.png)
+![image-20220114154528250](https://img.huangge1199.cn/blog/sublimeText4Purchase/image-20220114154528250.png)
 
 ## 替换后点击另存为，替换掉原来的文件，保存
 
-![image-20220114154843108](image-20220114154843108.png)
+![image-20220114154843108](https://img.huangge1199.cn/blog/sublimeText4Purchase/image-20220114154843108.png)
 
 ## 输入激活码激活
 
@@ -43,7 +43,7 @@ https://www.sublimetext.com/download
 
 - 依次点击Help->Enter License
 
-  ![image-20220114155104130](image-20220114155104130.png)
+  ![image-20220114155104130](https://img.huangge1199.cn/blog/sublimeText4Purchase/image-20220114155104130.png)
 
 - 在弹出的窗口输入激活码
 
@@ -65,14 +65,14 @@ https://www.sublimetext.com/download
   ------ END LICENSE ------
   ```
 
-  ![image-20220114155245648](image-20220114155245648.png)
+  ![image-20220114155245648](https://img.huangge1199.cn/blog/sublimeText4Purchase/image-20220114155245648.png)
 
 - 点击下方的Use License
 
-  ![image-20220114155341371](image-20220114155341371.png)
+  ![image-20220114155341371](https://img.huangge1199.cn/blog/sublimeText4Purchase/image-20220114155341371.png)
 
 - 确认
 
   依次点击Help->About Sublime Text
 
-  ![image-20220114155558214](image-20220114155558214.png)
+  ![image-20220114155558214](https://img.huangge1199.cn/blog/sublimeText4Purchase/image-20220114155558214.png)

@@ -8,7 +8,7 @@ categories: [安装部署]
 
 [官网地址](https://nodejs.org/en/download/)
 
-![image-20220603110634896](inNodejsByOsDeepin/image-20220603110634896.png)
+![image-20220603110634896](https://img.huangge1199.cn/blog/inNodejsByOsDeepin/image-20220603110634896.png)
 
 > 注意版本
 
@@ -23,7 +23,7 @@ tar -xf node-v16.15.1-linux-x64.tar.xz
 ls -l
 ```
 
-![image-20220603111656347](inNodejsByOsDeepin/image-20220603111656347.png)
+![image-20220603111656347](https://img.huangge1199.cn/blog/inNodejsByOsDeepin/image-20220603111656347.png)
 
 # 3、移动文件
 
@@ -46,9 +46,9 @@ mv node-v16.15.1-linux-x64 node
 ls -l
 ```
 
-![image-20220603112001543](inNodejsByOsDeepin/image-20220603112001543.png)
+![image-20220603112001543](https://img.huangge1199.cn/blog/inNodejsByOsDeepin/image-20220603112001543.png)
 
-![image-20220603112153367](inNodejsByOsDeepin/image-20220603112153367.png)
+![image-20220603112153367](https://img.huangge1199.cn/blog/inNodejsByOsDeepin/image-20220603112153367.png)
 
 # 4、创建软链接
 
@@ -63,7 +63,7 @@ sudo ls -l /usr/local/bin/
 
 > 此处涉及到权限问题，因此命令前要加`sudo`
 
-![image-20220603112904096](inNodejsByOsDeepin/image-20220603112904096.png)
+![image-20220603112904096](https://img.huangge1199.cn/blog/inNodejsByOsDeepin/image-20220603112904096.png)
 
 # 5、确认node和npm版本
 
@@ -72,7 +72,7 @@ node -v
 npm -v
 ```
 
-![image-20220603113034176](inNodejsByOsDeepin/image-20220603113034176.png)
+![image-20220603113034176](https://img.huangge1199.cn/blog/inNodejsByOsDeepin/image-20220603113034176.png)
 
 # 6、设置镜像
 
@@ -87,4 +87,4 @@ npm config set registry https://registry.npm.taobao.org
 npm config list
 ```
 
-![image-20220603113454241](inNodejsByOsDeepin/image-20220603113454241.png)
+![image-20220603113454241](https://img.huangge1199.cn/blog/inNodejsByOsDeepin/image-20220603113454241.png)
