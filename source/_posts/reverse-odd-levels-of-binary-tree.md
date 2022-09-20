@@ -68,19 +68,17 @@ categories: [算法,力扣]
 
 > 看了灵神的周赛视频讲解，或多或少有影响
 
-这题有两种思路：
-- BFS：交换元素值
-- DFS：交换节点
+这题有两种方法，都可以做交换值：
+- BFS
+- DFS
 
-# 代码
+# BFS代码
 
 {% tabs categories%}
 
 <!-- tab Java -->
 
 ```java
-import com.code.leet.entiy.TreeNode;
-
 import java.util.*;
 
 class Solution {
@@ -150,6 +148,64 @@ class Solution:
                     node1, node2 = queue[i], queue[len(queue) - 1 - i]
                     node1.val, node2.val = node2.val, node1.val
             level = 1 - level
+        return root
+```
+
+<!-- endtab -->
+
+{% endtabs %}
+
+# DFS代码
+
+{% tabs categories%}
+
+<!-- tab Java -->
+
+```java
+import java.util.*;
+
+class Solution {
+    public TreeNode reverseOddLevels(TreeNode root) {
+        if (root == null) {
+            return root;
+        }
+        dfs(root.left, root.right, 1);
+        return root;
+    }
+    
+    private void dfs(TreeNode left, TreeNode right, int level) {
+        if (left == null) {
+            return;
+        }
+        if (level == 1) {
+            // 如果是奇数层，交换值
+            int tmp = left.val;
+            left.val = right.val;
+            right.val = tmp;
+        }
+        dfs(left.left, right.right, 1 - level);
+        dfs(left.right, right.left, 1 - level);
+    }
+}
+```
+
+<!-- endtab -->
+
+<!-- tab Python3 -->
+
+```python
+from typing import Optional
+
+
+class Solution:
+    def reverseOddLevels(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+        def dfs(left, right, level: bool) -> None:
+            if left is None: return
+            if level: left.val, right.val = right.val, left.val
+            dfs(left.left, right.right, not level)
+            dfs(left.right, right.left, not level)
+
+        dfs(root.left, root.right, True)
         return root
 ```
 
