@@ -21,8 +21,10 @@ menu:
     书籍: /books/ || fas fa-book
     音乐: /music/ || fas fa-music
     电影: /movies/ || fas fa-video
-    游戏: /steamgames/
-  网址大全: /link/ || fas fa-link
+    游戏: /steamgames/ || fas fa-gamepad
+  链接|| fas fa-link:
+    友情链接: /link/ || fas fa-user-friends
+    学习网站: /study/ || fas fa-paperclip
   关于: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
