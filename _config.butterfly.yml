@@ -50,8 +50,10 @@ copy:
 #   icon: link || the description
 social:
   # fab fa-github: https://github.com/xxxxx || Github
+  fab fa-github: https://github.com/huangge1199 || Github
   fas fa-envelope: mailto:huangge1199@hotmail.com || Email
-  iconfont icon-gongzhonghao1: https://img.huangge1199.cn/blog/images/gjh.png || 公众号
+  iconfont icon-csdn: https://blog.csdn.net/huangge1199 || CSDN
+  iconfont icon-gitee: https://gitee.com/huangge1199_admin || Gitee
 
 # search (搜索)
 # see https://butterfly.js.org/posts/ceeb73f/#搜索系統
