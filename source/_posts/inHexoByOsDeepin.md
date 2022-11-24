@@ -19,7 +19,7 @@ categories: [安装部署]
 npm install -g hexo-cli
 ```
 
-![](https://img.huangge1199.cn/blog/inHexoByOsDeepin/inHexoByOsDeepin/image-20220603141423311.png)
+![](https://img.huangge1199.cn/blog/inHexoByOsDeepin/image-20220603141423311.png)
 
 # 3、创建软链接
 
@@ -30,7 +30,7 @@ sudo ln -s /home/deepin/app/node/bin/hexo /usr/local/bin/
 sudo ls -l /usr/local/bin/
 ```
 
-![](https://img.huangge1199.cn/blog/inHexoByOsDeepin/inHexoByOsDeepin/image-20220603141527169.png)
+![](https://img.huangge1199.cn/blog/inHexoByOsDeepin/image-20220603141527169.png)
 
 # 4、查看Hexo版本
 
@@ -38,4 +38,4 @@ sudo ls -l /usr/local/bin/
 hexo -v
 ```
 
-![](https://img.huangge1199.cn/blog/inHexoByOsDeepin/inHexoByOsDeepin/image-20220603141613298.png)
+![](https://img.huangge1199.cn/blog/inHexoByOsDeepin/image-20220603141613298.png)
