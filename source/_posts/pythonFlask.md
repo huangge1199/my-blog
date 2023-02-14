@@ -145,3 +145,310 @@ if __name__ == '__main__':
 ```
 Loen
 ```
+
+## 处理多值
+
+```pythoon
+from flask import Flask, request
+
+app = Flask(__name__)
+
+
+@app.route('/')
+def hello_world():  # put application's code here
+    r = request.args.getlist('app')  # 返回一个list
+    return r
+
+
+if __name__ == '__main__':
+    app.run()
+
+```
+
+在浏览器中访问`http://127.0.0.1:5000/?name=Loen&age&app=ios&app=android`，将显示：
+
+```
+[
+  "ios",
+  "android"
+]
+```
+
+# 获取POST方法传送的数据
+
+作为一种HTTP请求方法，POST用于向指定的资源提交要被处理的数据。
+
+我们在某些时候不适合将数据放到URL参数中，密或者数据太多，浏览器不一定支持太长长度的URL。这时，一般使用POST方法。
+
+本文章使用python的requests库模拟浏览器。
+
+安装命令：
+
+```batch
+pip install requests
+```
+
+## 看POST数据内容
+
+app.py代码如下：
+
+```python
+from flask import Flask, request
+
+app = Flask(__name__)
+
+
+@app.route('/register', methods=['POST'])
+def register():
+    print(request.headers)
+    print(request.stream.read())
+    return 'welcome'
+
+
+if __name__ == '__main__':
+    app.run()
+
+```
+
+register.py代码如下：
+
+```python
+import requests
+
+if __name__ == '__main__':
+    user_info = {'name': 'Loen', 'password': 'loveyou'}
+    r = requests.post("http://127.0.0.1:5000/register", data=user_info)
+    print(r.text)
+
+```
+
+运行`app.py`，然后运行`register.py`。
+
+`register.py`将输出：
+
+```
+welcome
+```
+
+`app.py`将输出：
+
+```
+Host: 127.0.0.1:5000
+User-Agent: python-requests/2.28.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 26
+Content-Type: application/x-www-form-urlencoded
+
+
+b'name=Loen&password=loveyou'
+127.0.0.1 - - [14/Feb/2023 21:12:17] "POST /register HTTP/1.1" 200 -
+```
+
+## 解析POST数据
+
+app.py代码如下：
+
+```python
+from flask import Flask, request
+
+app = Flask(__name__)
+
+
+@app.route('/register', methods=['POST'])
+def register():
+    # print(request.stream.read()) # 不要用，否则下面的form取不到数据
+    print(request.form)
+    print(request.form['name'])
+    print(request.form.get('name'))
+    print(request.form.getlist('name'))
+    print(request.form.get('nickname', default='little apple'))
+    return 'welcome'
+
+
+if __name__ == '__main__':
+    app.run(port=5000, debug=True)
+
+```
+
+register.py代码不变，运行`app.py`，然后运行`register.py`。
+
+`register.py`将输出：
+
+```
+welcome
+```
+
+`app.py`将输出：
+
+```
+ImmutableMultiDict([('name', 'Loen'), ('password', 'loveyou')])
+Loen
+Loen
+['Loen']
+little apple
+```
+
+request.form会自动解析数据。
+
+request.form['name']和request.form.get('name')都可以获取name对应的值。
+
+request.form.get()可以为参数default指定值以作为默认值。
+
+## 获取POST中的列表数据
+
+app.py代码如下：
+
+```python
+from flask import Flask, request
+
+app = Flask(__name__)
+
+
+@app.route('/register', methods=['POST'])
+def register():
+    # print(request.stream.read()) # 不要用，否则下面的form取不到数据
+    print(request.form.getlist('name'))
+    return 'welcome'
+
+
+if __name__ == '__main__':
+    app.run(port=5000, debug=True)
+
+```
+
+register.py代码如下：
+
+```python
+import requests
+
+if __name__ == '__main__':
+    user_info = {'name': ['Loen', 'Alan'], 'password': 'loveyou'}
+    r = requests.post("http://127.0.0.1:5000/register", data=user_info)
+    print(r.text)
+
+```
+
+运行`app.py`，然后运行`register.py`。
+
+`register.py`将输出：
+
+```
+welcome
+```
+
+`app.py`将输出：
+
+```
+['Loen', 'Alan']
+```
+
+# 处理和响应JSON数据
+
+## 处理JSON数据
+
+如果POST的数据是JSON格式，request.json会自动将json数据转换成Python类型（字典或者列表）。
+
+app.py代码如下：
+
+```python
+from flask import Flask, request
+
+app = Flask(__name__)
+
+
+@app.route('/add', methods=['POST'])
+def add():
+    print(type(request.json))
+    print(request.json)
+    result = request.json['n1'] + request.json['n2']
+    return str(result)
+
+
+if __name__ == '__main__':
+    app.run(port=5000, debug=True)
+
+```
+
+register.py代码如下：
+
+```python
+import requests
+
+if __name__ == '__main__':
+    json_data = {'n1': 5, 'n2': 3}
+    r = requests.post("http://127.0.0.1:5000/add", json=json_data)
+    print(r.text)
+
+```
+
+运行`app.py`，然后运行`register.py`。
+
+`register.py`将输出：
+
+```
+8
+```
+
+`app.py`将输出：
+
+```
+<class 'dict'>
+{'n1': 5, 'n2': 3}
+```
+
+## 响应JSON数据（Response）
+
+app.py代码如下：
+
+```python
+import json
+
+from flask import Flask, request, Response
+
+app = Flask(__name__)
+
+
+@app.route('/add', methods=['POST'])
+def add():
+    result = {'sum': request.json['n1'] + request.json['n2']}
+    return Response(json.dumps(result), mimetype='application/json')
+
+
+if __name__ == '__main__':
+    app.run(port=5000, debug=True)
+
+```
+
+register.py代码如下：
+
+```python
+import requests
+
+if __name__ == '__main__':
+    json_data = {'n1': 5, 'n2': 3}
+    r = requests.post("http://127.0.0.1:5000/add", json=json_data)
+    print(r.headers)
+    print(r.text)
+
+```
+
+运行`app.py`，然后运行`register.py`。
+
+`register.py`将输出：
+
+```
+/home/huangge1199/PycharmProjects/flaskProject/venv/bin/python /home/huangge1199/PycharmProjects/flaskProject/register.py 
+{'Server': 'Werkzeug/2.2.2 Python/3.7.3', 'Date': 'Tue, 14 Feb 2023 13:37:49 GMT', 'Content-Type': 'application/json', 'Content-Length': '10', 'Connection': 'close'}
+{"sum": 8}
+```
+
+## 响应JSON数据（jsonify）
+
+app.py中app()返回时使用下面的内容，效果同之前一样
+
+```python
+return jsonify(result)
+```
+
