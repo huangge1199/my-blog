@@ -53,7 +53,7 @@ pip3 install Flask
 
 ## 新项目创建后的结构
 
-![](pythonFlask/2023-02-14-17-10-32-image.png)
+![](https://img.huangge1199.cn/blog/pythonFlask/2023-02-14-17-10-32-image.png)
 
 static文件夹：存放静态文件，比如css、js、图片等
 
@@ -451,7 +451,7 @@ pip install werkzeug
 
 目录结构：
 
-![](pythonFlask/2023-02-15-15-10-19-image.png)
+![](https://img.huangge1199.cn/blog/pythonFlask/2023-02-15-15-10-19-image.png)
 
 app.py代码如下：
 
@@ -504,7 +504,7 @@ if __name__ == "__main__":
 
 运行`app.py`，然后运行`register.py`，这时候文件已经上传到了指定目录中
 
-![](pythonFlask/2023-02-15-15-11-43-image.png)
+![](https://img.huangge1199.cn/blog/pythonFlask/2023-02-15-15-11-43-image.png)
 
 要控制上产文件的大小，可以设置请求实体的大小，代码如下：
 
@@ -711,7 +711,7 @@ if __name__ == '__main__':
 
 浏览器显示：
 
-![](pythonFlask/2023-02-15-17-26-19-image.png)
+![](https://img.huangge1199.cn/blog/pythonFlask/2023-02-15-17-26-19-image.png)
 
 ## 自定义错误页面
 
@@ -745,7 +745,7 @@ if __name__ == '__main__':
 
 浏览器显示：
 
-![](pythonFlask/2023-02-15-17-29-44-image.png)
+![](https://img.huangge1199.cn/blog/pythonFlask/2023-02-15-17-29-44-image.png)
 
 # 用户会话
 
