@@ -1,9 +1,9 @@
-```
+---
 title: nvm安装nodejs
 date: 2022-06-03 14:46:52
 tags: [deepin,安装部署]
 categories: [安装部署]
-```
+---
 
 # nvm下载
 
