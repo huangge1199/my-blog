@@ -1,5 +1,5 @@
 ---
-title: Firewall vs iptables: 什么是最好的Linux防火墙工具？
+title: Firewall vs iptables：什么是最好的Linux防火墙工具？
 tags: [Linux]
 categories: [Linux]
 date: 2023-03-27 22:40:30
