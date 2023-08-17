@@ -164,3 +164,36 @@ public void changePermission(String mod, String path) throws Exception {
     }
 }
 ```
+
+## 7、查询服务器磁盘空间
+
+```java
+/**
+ * 查询服务器磁盘空间
+ *
+ * @return map
+ */
+public Map<String, String> getDiskInfo() {
+    // 总空间
+    long totalSpace = 0;
+    // 已用空间
+    long usableSpace = 0;
+    // 可用空间
+    long unallocatedSpace = 0;
+    for (FileStore fileStore : FileSystems.getDefault().getFileStores()) {
+        try {
+            totalSpace += fileStore.getTotalSpace();
+            usableSpace += fileStore.getUsableSpace();
+            unallocatedSpace += fileStore.getUnallocatedSpace();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    DecimalFormat decimalFormat = new DecimalFormat("#.00");
+    Map<String, String> map = new HashMap<>(3);
+    map.put("totalSpace", decimalFormat.format(totalSpace / (1024.0 * 1024 * 1024)));
+    map.put("usableSpace", decimalFormat.format(usableSpace / (1024.0 * 1024 * 1024)));
+    map.put("unallocatedSpace", decimalFormat.format(unallocatedSpace / (1024.0 * 1024 * 1024)));
+    return map;
+}
+```
