@@ -4,8 +4,6 @@ tags: [ java ]
 categories: [ java ]
 date: 2023-09-06 10:24:03
 ---
-最终，了解您的应用需求并进行测试是选择合适的帧率和分辨率的关键。通过仔细权衡这些因素，您可以确保您的RTSP流视频抓取应用提供了所需的性能和图像质量。
-
 # 引言
 
 在实时视频流应用中，选择适当的帧率和分辨率对于确保视频流的顺畅播放和图像质量至关重要。本文将向您介绍如何使用Java和JavaCV库中的FFmpegFrameGrabber来从RTSP流中抓取图像，并在抓取时设置帧率和分辨率。
@@ -44,6 +42,8 @@ public class RTSPImageCapture {
 
         try {
             FFmpegFrameGrabber grabber = new FFmpegFrameGrabber(rtsp);
+            // 使用tcp的方式，不然会丢包很严重
+            grabber.setOption("rtsp_transport", "tcp");
             grabber.start();
             Frame frame = grabber.grabImage();
             if (frame != null) {
@@ -151,3 +151,4 @@ grabber.setImageHeight(desiredHeight);
 
 选择合适的帧率和分辨率是优化RTSP流视频抓取的关键决策。根据应用的实时性要求、资源限制、显示设备、存储需求和网络条件，您可以调整这些参数以获得最佳的用户体验。实时性和流畅性之间的权衡是一个关键考虑因素，可以根据需要进行调整，以适应不同的应用场景。
 
+最终，了解您的应用需求并进行测试是选择合适的帧率和分辨率的关键。通过仔细权衡这些因素，您可以确保您的RTSP流视频抓取应用提供了所需的性能和图像质量。
