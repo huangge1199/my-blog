@@ -52,32 +52,38 @@ cron 中，时间的设定是至关重要的，它使用一些特殊的时间字
 
 ## 2.1、@reboot：系统启动时执行任务
 
-bash
-Copy code
+```
 @reboot /usr/local/bin/startup_script.sh
-@yearly 或 @annually：每年执行一次
+```
 
-bash
-Copy code
+## 2.2、@yearly 或 @annually：每年执行一次
+
+```
 @yearly /usr/local/bin/yearly_task.sh
-@monthly：每月执行一次
+```
 
-bash
-Copy code
+## 2.3、@monthly：每月执行一次
+
+```
 @monthly /usr/local/bin/monthly_task.sh
-@weekly：每周执行一次
+```
 
-bash
-Copy code
+## 2.4、@weekly：每周执行一次
+
+```
 @weekly /usr/local/bin/weekly_task.sh
-@daily 或 @midnight：每天执行一次
+```
 
-bash
-Copy code
+## 2.5、@daily 或 @midnight：每天执行一次
+
+```
 @daily /usr/local/bin/daily_task.sh
-@hourly：每小时执行一次
+```
 
-bash
-Copy code
+## 2.6、@hourly：每小时执行一次
+
+```
 @hourly /usr/local/bin/hourly_task.sh
-这些特殊的时间字段使得在 crontab 中定义定时任务更加方便，您可以根据任务的周期性要求选择适当的时间字段。它们使时间设定更加直观和易读，而不需要编写复杂的时间表。通过合理利用 cron 时间字段，您可以轻松自动化各种系统维护和管理任务，提高系统的效率和可靠性。
+```
+
+这些特殊的时间字段使得在 crontab 中定义定时任务更加方便，您可以根据任务的周期性要求选择适当的时间字段。它们使时间设定更加直观和易读，而不需要编写复杂的时间表。通过合理利用cron 时间字段，您可以轻松自动化各种系统维护和管理任务，提高系统的效率和可靠性。
