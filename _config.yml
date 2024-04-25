@@ -4,7 +4,7 @@
 
 # Site
 title: 龙儿之家
-subtitle: 'blog.huangge1199.cn'
+subtitle: 'hexo.huangge1199.cn'
 description: '千里之行，始于足下'
 keywords:
 author: 轩辕龙儿
@@ -14,7 +14,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://blog.huangge1199.cn
+url: https://hexo.huangge1199.cn
 permalink: /post/:title/
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
