@@ -1874,27 +1874,79 @@ console.log(stringNumeric.add(stringNumeric.zeroValue, "test"));
 
 默认情况下，枚举是基于 0 的，也就是说第一个值是 0，后面的值依次递增。不要担心，当中的每一个值都可以显式指定，只要不出现重复即可，没有被显式指定的值，都会在前一个值的基础上递增。
 
-```
+```ts
 enum Color {Red, Green, Blue}
 let c: Color = Color.Green;  // 1
 ```
 
 或者
 
-```
+```ts
 enum Color {Red = 1, Green, Blue = 4}
 let c: Color = Color.Green;  // 2
 ```
 
 枚举有一个很方便的特性，就是您也可以向枚举传递一个数值，然后获取它对应的名称值。举个例子，如果我们有一个值 2，但是不清楚在 Color 枚举中与之对应的名称是什么，我们就可以通过以下的方式来进行检索：
 
-```
+```ts
 enum Color {Red = 1, Green, Blue}
 let colorName: string = Color[2];  // 'Green'
 ```
 
 但是像上面的这种写法不是太好，因为如果您给定的数值没有与之对应的枚举项，那么结果就是 undefined。所以，如果您想要得到指定枚举项的字符串名称，可以使用类似这样的写法：
 
-```
+```ts
 let colorName: string = Color[Color.Green];  // 'Green'
+```
+
+# 命名空间
+
+TypeScript里使用命名空间（之前叫做“内部模块”）来组织你的代码。任何使用 module关键字来声明一个内部模块的地方都应该使用namespace关键字来替换。 这就避免了让新的使用者被相似的名称所迷惑。
+
+### 命名空间介绍
+
+下面的例子里，把所有与验证器相关的类型都放到一个叫做Validation的命名空间里。 因为我们想让这些接口和类在命名空间之外也是可访问的，所以需要使用 export。 相反的，变量 lettersRegexp和numberRegexp是实现的细节，不需要导出，因此它们在命名空间外是不能访问的。 在文件末尾的测试代码里，由于是在命名空间之外访问，因此需要限定类型的名称，比如 Validation.LettersOnlyValidator。
+
+```ts
+namespace Validation {
+    export interface StringValidator {
+        isAcceptable(s: string): boolean;
+    }
+
+
+    const lettersRegexp = /^[A-Za-z]+$/;
+    const numberRegexp = /^[0-9]+$/;
+
+
+    export class LettersOnlyValidator implements StringValidator {
+        isAcceptable(s: string) {
+            return lettersRegexp.test(s);
+        }
+    }
+
+
+    export class ZipCodeValidator implements StringValidator {
+        isAcceptable(s: string) {
+            return s.length === 5 && numberRegexp.test(s);
+        }
+    }
+}
+
+
+// Some samples to try
+let strings = ["Hello", "98052", "101"];
+
+
+// Validators to use
+let validators: { [s: string]: Validation.StringValidator; } = {};
+validators["ZIP code"] = new Validation.ZipCodeValidator();
+validators["Letters only"] = new Validation.LettersOnlyValidator();
+
+
+// Show whether each string passed each validator
+for (let s of strings) {
+    for (let name in validators) {
+        console.log(`"${ s }" - ${ validators[name].isAcceptable(s) ? "matches" : "does not match" } ${ name }`);
+    }
+}
 ```
