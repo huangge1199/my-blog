@@ -143,7 +143,7 @@ userinfo`hello my name is ${myname}, i'm ${getAge()}`
 ```
 
 结果：
-![](ts（typescript）-kan-zhe-pian-jiu-gou-le/2024-04-23-16-18-22-image.png)
+![](https://img.huangge1199.cn/blog/ts（typescript）-kan-zhe-pian-jiu-gou-le/2024-04-23-16-18-22-image.png)
 
 ## 数组
 
