@@ -198,6 +198,7 @@ toc:
   enable: true
   number: true
   style_simple: false
+  scroll_percent: true
 
 post_copyright:
   enable: true
@@ -370,7 +371,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://vercel-5xn259jxz-huangge1199.vercel.app/
+  envId: https://twikoo.huangge1199.cn
   region:
   visitor: true
   option:
@@ -530,7 +531,7 @@ background:
 footer_bg: true
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
-rightside-bottom:
+rightside_bottom:
 
 # Enter transitions (開啓網頁進入效果)
 enter_transitions: true
@@ -583,7 +584,7 @@ click_heart:
   mobile: false
 
 # Mouse click effects: words (鼠標點擊效果: 文字)
-ClickShowText:
+clickShowText:
   enable: false
   text:
   # - I
@@ -864,7 +865,7 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-  # - <link rel="stylesheet" href="/xxx.css">
+    # - <link rel="stylesheet" href="/xxx.css">
     - <meta name="360-site-verification" content="c45b8e2dba5da15cf770a1456fa7635f" />
     - <script src="/live2d-widget/autoload.js"></script>
     - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
@@ -937,6 +938,8 @@ CDN:
   # prismjs_js:
   # prismjs_lineNumber_js:
   # prismjs_autoloader:
+# show scroll percent in scroll-to-top button
+rightside_scroll_percent: true
 
 # 插件
 # see https://akilar.top/posts/1f9c68c9/

@@ -106,7 +106,8 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: 'huangge1199@192.168.0.198:/var/services/homes/huangge1199/hexo/hexo.git'
+  repo: 'huangge1199@192.168.188.1:/var/services/homes/huangge1199/hexo/hexo.git'
+#  repo: 'root@81.70.94.30:/hexo/hexo.git'
   branch: master
 #  repo: root@81.70.94.30:/app/hexo/hexo.git
 markdown_it_plus:
@@ -171,9 +172,6 @@ footer_beautify:
     - link: https://beian.miit.gov.cn
       shields: /images/icp.svg
       message: 备案信息
-    - link: https://icp.gov.moe/?keyword=20221199
-      shields: /images/micp.svg
-      message: 萌ICP
   swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css
   swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js
   swiperbdage_init_js: https://npm.elemecdn.com/hexo-butterfly-footer-beautify/lib/swiperbdage_init.min.js
