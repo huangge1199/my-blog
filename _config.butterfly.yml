@@ -16,7 +16,6 @@ menu:
   留言板: /comments/ || fa-fw fas fa-comment-dots
   #  照片: /Gallery/ || fas fa-images
   娱乐||fa fa-heartbeat:
-    照片: /Gallery/ || fas fa-images
     说说: /artitalk/ || fa-fw fas fa-comment-dots
     书籍: /books/ || fas fa-book
     音乐: /music/ || fas fa-music
