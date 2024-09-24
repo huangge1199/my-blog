@@ -9,7 +9,7 @@ categories: [安装部署]
 
 安装好jdk
 
-参考：[deepin下安装jdk](http://192.168.0.198:5080/post/inJdkByOsDeepin/)
+参考：[deepin下安装jdk](https://blog.huangge1199.cn/archives/deepin%E4%B8%8B%E5%AE%89%E8%A3%85jdk)
 
 # 2、下载安装包
 

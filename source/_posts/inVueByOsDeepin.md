@@ -9,7 +9,7 @@ categories: [安装部署]
 
 安装好nodejs
 
-参考：[deepin下安装nodejs](http://192.168.0.198:5080/post/inNodejsByOsDeepin/)
+参考：[deepin下安装nodejs](https://blog.huangge1199.cn/archives/deepin%E4%B8%8B%E5%AE%89%E8%A3%85nodejs)
 
 # 2、全局安装Vue
 

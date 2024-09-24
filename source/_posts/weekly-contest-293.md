@@ -13,7 +13,7 @@ categories: [算法,力扣,周赛]
 
 ## 单个题解：
 
-[力扣2273. 移除字母异位词后的结果数组](http://192.168.0.198:5080/post/find-resultant-array-after-removing-anagrams/)
+[力扣2273. 移除字母异位词后的结果数组](https://blog.huangge1199.cn/archives/%E5%8A%9B%E6%89%A32273%E7%A7%BB%E9%99%A4%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D%E5%90%8E%E7%9A%84%E7%BB%93%E6%9E%9C%E6%95%B0%E7%BB%84)
 
 ## 题目：
 
@@ -100,7 +100,7 @@ class Solution {
 
 ## 单个题解：
 
-[力扣2274. 不含特殊楼层的最大连续楼层数](http://192.168.0.198:5080/post/maximum-consecutive-floors-without-special-floors/)
+[力扣2274. 不含特殊楼层的最大连续楼层数](https://blog.huangge1199.cn/archives/%E5%8A%9B%E6%89%A32274%E4%B8%8D%E5%90%AB%E7%89%B9%E6%AE%8A%E6%A5%BC%E5%B1%82%E7%9A%84%E6%9C%80%E5%A4%A7%E8%BF%9E%E7%BB%AD%E6%A5%BC%E5%B1%82%E6%95%B0)
 
 ## 题目：
 
@@ -185,7 +185,7 @@ class Solution {
 
 ## 单个题解：
 
-[力扣2275. 按位与结果大于零的最长组合](http://192.168.0.198:5080/post/largest-combination-with-bitwise-and-greater-than-zero/)
+[力扣2275. 按位与结果大于零的最长组合](https://blog.huangge1199.cn/archives/%E5%8A%9B%E6%89%A32275%E6%8C%89%E4%BD%8D%E4%B8%8E%E7%BB%93%E6%9E%9C%E5%A4%A7%E4%BA%8E%E9%9B%B6%E7%9A%84%E6%9C%80%E9%95%BF%E7%BB%84%E5%90%88)
 
 ## 题目：
 
@@ -270,7 +270,7 @@ class Solution {
 
 ## 单个题解：
 
-[力扣2276. 统计区间中的整数数目](http://192.168.0.198:5080/post/count-integers-in-intervals/)
+[力扣2276. 统计区间中的整数数目](https://blog.huangge1199.cn/archives/%E5%8A%9B%E6%89%A32276%E7%BB%9F%E8%AE%A1%E5%8C%BA%E9%97%B4%E4%B8%AD%E7%9A%84%E6%95%B4%E6%95%B0%E6%95%B0%E7%9B%AE)
 
 ## 题目：
 

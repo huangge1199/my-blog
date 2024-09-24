@@ -13,7 +13,7 @@ categories: [算法,力扣,周赛]
 
 ## 单个题解：
 
-[力扣2264. 字符串中最大的 3 位相同数字](http://192.168.0.198:5080/post/largest-3-same-digit-number-in-string/)
+[力扣2264. 字符串中最大的 3 位相同数字](https://blog.huangge1199.cn/archives/%E5%8A%9B%E6%89%A32264%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E6%9C%80%E5%A4%A7%E7%9A%843%E4%BD%8D%E7%9B%B8%E5%90%8C%E6%95%B0%E5%AD%97)
 
 ## 题解：
 
@@ -42,7 +42,7 @@ public String largestGoodInteger(String num) {
 
 ## 单个题解：
 
-[力扣6057. 统计值等于子树平均值的节点数](http://192.168.0.198:5080/post/count-nodes-equal-to-average-of-subtree/)
+[力扣6057. 统计值等于子树平均值的节点数](https://blog.huangge1199.cn/archives/%E5%8A%9B%E6%89%A36057%E7%BB%9F%E8%AE%A1%E5%80%BC%E7%AD%89%E4%BA%8E%E5%AD%90%E6%A0%91%E5%B9%B3%E5%9D%87%E5%80%BC%E7%9A%84%E8%8A%82%E7%82%B9%E6%95%B0)
 
 ## 题解：
 
@@ -94,7 +94,7 @@ class Solution {
 
 ## 单个题解：
 
-[力扣2267. 检查是否有合法括号字符串路径](http://192.168.0.198:5080/post/check-if-there-is-a-valid-parentheses-string-path/)
+[力扣2267. 检查是否有合法括号字符串路径](https://blog.huangge1199.cn/archives/%E5%8A%9B%E6%89%A32267%E6%A3%80%E6%9F%A5%E6%98%AF%E5%90%A6%E6%9C%89%E5%90%88%E6%B3%95%E6%8B%AC%E5%8F%B7%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%B7%AF%E5%BE%84)
 
 ## 题解：
 
@@ -161,7 +161,7 @@ class Solution {
 
 ## 单个题解：
 
-[力扣2266. 统计打字方案数](http://192.168.0.198:5080/post/count-number-of-texts/)
+[力扣2266. 统计打字方案数](https://blog.huangge1199.cn/archives/%E5%8A%9B%E6%89%A32266%E7%BB%9F%E8%AE%A1%E6%89%93%E5%AD%97%E6%96%B9%E6%A1%88%E6%95%B0)
 
 ## 题解：
 
