@@ -37,7 +37,7 @@ curl -fsSL https://ollama.com/install.sh | sh
 
 ### windows
 
-直接下载安装包：[windows安装包](https://ollama.com/download/OllamaSetup.exehttps://ollama.com/download/OllamaSetup.exe)
+直接下载安装包：[windows安装包](https://ollama.com/download/OllamaSetup.exe)
 
 ### macos
 
